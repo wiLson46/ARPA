@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&family=Rock+Salt&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/91e633fd72.js" crossorigin="anonymous"></script>
+    <title>ARPA</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="browse">
+            <a class="linkNoStyle" href="refugios.html">
+                <div class="menuItem">
+                    <i class="fa-solid fa-house"></i>
+                    <p class="menuText">Refugios</p>
+                </div>
+            </a>
+            <div class="menuItem">
+                <i class="fa-solid fa-dog"></i>
+                <p class="menuText">Mascotas</p>
+            </div>
+            <div class="menuItem">
+                <i class="fa-solid fa-person"></i>
+                <p class="menuText">Personas</p>
+            </div>
+            <div class="menuItem">
+                <i class="fa-solid fa-box-open"></i>
+                <p class="menuText">Depositos</p>
+            </div>
+            <div class="menuItem">
+                <i class="fa-solid fa-gear"></i>
+                <p class="menuText">Opciones</p>
+            </div>
+            <a class="linkNoStyle" href="index.html">
+                <div class="menuItem">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <p class="menuText">Salir</p>
+                </div>
+            </a>
+        </div>
+        <div id="browseMobile" class="closed">
+            <a class="linkNoStyle" href="refugios.html">
+                <div class="menuItem itemOnMobile">
+                    <i class="fa-solid fa-house"></i>
+                    <p class="menuText">Refugios</p>
+                </div>
+            </a>
+            <div class="menuItem itemOnMobile">
+                <i class="fa-solid fa-dog"></i>
+                <p class="menuText biggerText">Mascotas</p>
+            </div>
+            <div class="menuItem itemOnMobile">
+                <i class="fa-solid fa-person"></i>
+                <p class="menuText biggerText">Personas</p>
+            </div>
+            <div class="menuItem itemOnMobile">
+                <i class="fa-solid fa-box-open"></i>
+                <p class="menuText biggerText">Depositos</p>
+            </div>
+            <div class="menuItem itemOnMobile">
+                <i class="fa-solid fa-gear"></i>
+                <p class="menuText biggerText">Opciones</p>
+            </div>
+            <a href="index.html">
+                <div class="menuItem itemOnMobile">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <p class="menuText biggerText">Salir</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="content">
+            <div class="userBar">
+                <div class="togglerPosition">
+                    <div id="toggle"></div>
+                </div>
+                <div class="userName">Sola, Wilson Eric</div>
+                <img class="userPic bps" src="images/avatar3.png" alt="profile image">
+            </div>
+            <div class="realContent">
+                <p class="indicadorPagina">Refugios</p>
+
+
+
+                <label for="standard-select">Standard Select</label>
+                <div class="select">
+                  <select id="standard-select">
+                    <option value="Option 1">Option 1</option>
+                    <option value="Option 2">Option 2</option>
+                    <option value="Option 3">Option 3</option>
+                    <option value="Option 4">Option 4</option>
+                    <option value="Option 5">Option 5</option>
+                    <option value="Option length">Option that has too long of a value to fit</option>
+                  </select>
+                  <span class="focus"></span>
+                </div>
+
+
+
+                <div class="contenedorTabla">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Telefono</th>
+                                <th scope="col">Dirección</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Empleados</th>
+                                <th scope="col">Animales</th>
+                                <th scope="col">Detalles</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row" data-label="ID">####</td>
+                                <td data-label="Nombre">Refugio 4</td>
+                                <td data-label="Telefono">123456789</td>
+                                <td data-label="Dirección">calle falsa 123</td>
+                                <td data-label="Email">ejemplo@dominio.com</td>
+                                <td data-label="Empleados">2</td>
+                                <td data-label="Animales">13/40</td>
+                                <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
+                            </tr>
+                            <tr>
+                                <td scope="row" data-label="ID">####</td>
+                                <td data-label="Nombre">Refugio 4</td>
+                                <td data-label="Telefono">123456789</td>
+                                <td data-label="Dirección">calle falsa 123</td>
+                                <td data-label="Email">ejemplo@dominio.com</td>
+                                <td data-label="Empleados">2</td>
+                                <td data-label="Animales">13/40</td>
+                                <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
+                            </tr>
+                            <tr>
+                                <td scope="row" data-label="ID">####</td>
+                                <td data-label="Nombre">Refugio 4</td>
+                                <td data-label="Telefono">123456789</td>
+                                <td data-label="Dirección">calle falsa 123</td>
+                                <td data-label="Email">ejemplo@dominio.com</td>
+                                <td data-label="Empleados">2</td>
+                                <td data-label="Animales">13/40</td>
+                                <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
+                            </tr>
+                            <tr>
+                                <td scope="row" data-label="ID">####</td>
+                                <td data-label="Nombre">Refugio 4</td>
+                                <td data-label="Telefono">123456789</td>
+                                <td data-label="Dirección">calle falsa 123</td>
+                                <td data-label="Email">ejemplo@dominio.com</td>
+                                <td data-label="Empleados">2</td>
+                                <td data-label="Animales">13/40</td>
+                                <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
+                            </tr>
+                            <tr>
+                                <td scope="row" data-label="ID">####</td>
+                                <td data-label="Nombre">Refugio 4</td>
+                                <td data-label="Telefono">123456789</td>
+                                <td data-label="Dirección">calle falsa 123</td>
+                                <td data-label="Email">ejemplo@dominio.com</td>
+                                <td data-label="Empleados">2</td>
+                                <td data-label="Animales">13/40</td>
+                                <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
+                            </tr>
+                            <tr>
+                                <td scope="row" data-label="ID">####</td>
+                                <td data-label="Nombre">Refugio 4</td>
+                                <td data-label="Telefono">123456789</td>
+                                <td data-label="Dirección">calle falsa 123</td>
+                                <td data-label="Email">ejemplo@dominio.com</td>
+                                <td data-label="Empleados">2</td>
+                                <td data-label="Animales">13/40</td>
+                                <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
+                            </tr>
+                            <tr>
+                                <td scope="row" data-label="ID">####</td>
+                                <td data-label="Nombre">Refugio 4</td>
+                                <td data-label="Telefono">123456789</td>
+                                <td data-label="Dirección">calle falsa 123</td>
+                                <td data-label="Email">ejemplo@dominio.com</td>
+                                <td data-label="Empleados">2</td>
+                                <td data-label="Animales">13/40</td>
+                                <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
+                            </tr>
+                            <tr>
+                                <td scope="row" data-label="ID">####</td>
+                                <td data-label="Nombre">Refugio 4</td>
+                                <td data-label="Telefono">123456789</td>
+                                <td data-label="Dirección">calle falsa 123</td>
+                                <td data-label="Email">ejemplo@dominio.com</td>
+                                <td data-label="Empleados">2</td>
+                                <td data-label="Animales">13/40</td>
+                                <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
+                            </tr>
+                            <tr>
+                                <td scope="row" data-label="ID">####</td>
+                                <td data-label="Nombre">Refugio 4</td>
+                                <td data-label="Telefono">123456789</td>
+                                <td data-label="Dirección">calle falsa 123</td>
+                                <td data-label="Email">ejemplo@dominio.com</td>
+                                <td data-label="Empleados">2</td>
+                                <td data-label="Animales">13/40</td>
+                                <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
+                            </tr>
+                            <tr>
+                                <td scope="row" data-label="ID">####</td>
+                                <td data-label="Nombre">Refugio 4</td>
+                                <td data-label="Telefono">123456789</td>
+                                <td data-label="Dirección">calle falsa 123</td>
+                                <td data-label="Email">ejemplo@dominio.com</td>
+                                <td data-label="Empleados">2</td>
+                                <td data-label="Animales">13/40</td>
+                                <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
+                            </tr>
+                            <tr>
+                                <td scope="row" data-label="ID">####</td>
+                                <td data-label="Nombre">Refugio 4</td>
+                                <td data-label="Telefono">123456789</td>
+                                <td data-label="Dirección">calle falsa 123</td>
+                                <td data-label="Email">ejemplo@dominio.com</td>
+                                <td data-label="Empleados">2</td>
+                                <td data-label="Animales">13/40</td>
+                                <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
+                            </tr>
+                            <tr>
+                                <td scope="row" data-label="ID">####</td>
+                                <td data-label="Nombre">Refugio 4</td>
+                                <td data-label="Telefono">123456789</td>
+                                <td data-label="Dirección">calle falsa 123</td>
+                                <td data-label="Email">ejemplo@dominio.com</td>
+                                <td data-label="Empleados">2</td>
+                                <td data-label="Animales">13/40</td>
+                                <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
+                            </tr>
+                            <tr>
+                                <td scope="row" data-label="ID">####</td>
+                                <td data-label="Nombre">Refugio 4</td>
+                                <td data-label="Telefono">123456789</td>
+                                <td data-label="Dirección">calle falsa 123</td>
+                                <td data-label="Email">ejemplo@dominio.com</td>
+                                <td data-label="Empleados">2</td>
+                                <td data-label="Animales">13/40</td>
+                                <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
+                            </tr>
+                            <tr>
+                                <td scope="row" data-label="ID">####</td>
+                                <td data-label="Nombre">Refugio 4</td>
+                                <td data-label="Telefono">123456789</td>
+                                <td data-label="Dirección">calle falsa 123</td>
+                                <td data-label="Email">ejemplo@dominio.com</td>
+                                <td data-label="Empleados">2</td>
+                                <td data-label="Animales">13/40</td>
+                                <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
+                            </tr>
+                            <tr>
+                                <td scope="row" data-label="ID">####</td>
+                                <td data-label="Nombre">Refugio 4</td>
+                                <td data-label="Telefono">123456789</td>
+                                <td data-label="Dirección">calle falsa 123</td>
+                                <td data-label="Email">ejemplo@dominio.com</td>
+                                <td data-label="Empleados">2</td>
+                                <td data-label="Animales">13/40</td>
+                                <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
+                            </tr>
+                            <tr>
+                                <td scope="row" data-label="ID">####</td>
+                                <td data-label="Nombre">Refugio 4</td>
+                                <td data-label="Telefono">123456789</td>
+                                <td data-label="Dirección">calle falsa 123</td>
+                                <td data-label="Email">ejemplo@dominio.com</td>
+                                <td data-label="Empleados">2</td>
+                                <td data-label="Animales">13/40</td>
+                                <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
+                            </tr>
+                            <tr>
+                                <td scope="row" data-label="ID">####</td>
+                                <td data-label="Nombre">Refugio 4</td>
+                                <td data-label="Telefono">123456789</td>
+                                <td data-label="Dirección">calle falsa 123</td>
+                                <td data-label="Email">ejemplo@dominio.com</td>
+                                <td data-label="Empleados">2</td>
+                                <td data-label="Animales">13/40</td>
+                                <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
+                            </tr>
+                            <tr>
+                                <td scope="row" data-label="ID">####</td>
+                                <td data-label="Nombre">Refugio 4</td>
+                                <td data-label="Telefono">123456789</td>
+                                <td data-label="Dirección">calle falsa 123</td>
+                                <td data-label="Email">ejemplo@dominio.com</td>
+                                <td data-label="Empleados">2</td>
+                                <td data-label="Animales">13/40</td>
+                                <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
+                            </tr>
+                            <tr>
+                                <td scope="row" data-label="ID">####</td>
+                                <td data-label="Nombre">Refugio 4</td>
+                                <td data-label="Telefono">123456789</td>
+                                <td data-label="Dirección">calle falsa 123</td>
+                                <td data-label="Email">ejemplo@dominio.com</td>
+                                <td data-label="Empleados">2</td>
+                                <td data-label="Animales">13/40</td>
+                                <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
+                            </tr>
+                            <tr>
+                                <td scope="row" data-label="ID">####</td>
+                                <td data-label="Nombre">Refugio 4</td>
+                                <td data-label="Telefono">123456789</td>
+                                <td data-label="Dirección">calle falsa 123</td>
+                                <td data-label="Email">ejemplo@dominio.com</td>
+                                <td data-label="Empleados">2</td>
+                                <td data-label="Animales">13/40</td>
+                                <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

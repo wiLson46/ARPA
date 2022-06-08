@@ -1,0 +1,114 @@
+.togglerPosition {
+    position: absolute;
+    left: 30px;
+    top: 25px;
+    display: none;
+}
+
+@media (max-width: 420px) {
+    .togglerPosition {
+        display: block;
+    }
+}
+
+#toggle {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background: #FFFFFF;
+        transition: 0.2s;
+        transform: translateY(-10px);
+        box-shadow: 0 10px 0 #FFFFFF;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background: #FFFFFF;
+        transition: 0.2s;
+        transform: translateY(10px);
+    }
+
+    &.active::before {
+        transform: translateY(0px) rotate(45deg);
+        box-shadow: 0 0px 0 #FFFFFF;
+    }
+
+    &.active::after {
+        transform: translateY(0px) rotate(-45deg);
+    }
+}
+
+#browseMobile {
+    padding-top: 50px;
+    padding-left: 40px;
+    position: fixed;
+    margin-top: 100px;
+    width: 100vw;
+    height: calc(100vh - 100px);
+    margin-left: -100vh;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #FFFFFF;
+    background-color: rgba(71, 98, 230, 0.7);
+    backdrop-filter: blur(4px);
+}
+
+@media (max-width: 375px) {
+    #browseMobile {
+        padding-top: 25px;
+        padding-left: 40px;
+    }
+    
+    .menuItem {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        min-height: 70px;
+    }
+}
+
+
+@media (max-width: 420px) {
+    #browseMobile {
+        display: flex;
+    }
+    .fa-solid {
+        min-width: 30px;
+    }
+}
+
+.closed {
+    transform: translateX(-100vh);
+    transition: cubic-bezier(.58, .91, 0, 1) 1000ms;
+}
+
+.opened {
+    transform: translateX(100vh);
+    transition: ease-in-out 700ms;
+}
+
+.menuText {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.biggerText {
+    font-size: 30px;
+    padding-top: 0px;
+    padding-left: 25px;
+}

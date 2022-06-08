@@ -1,0 +1,71 @@
+@use "enIndex";
+@use "enLogged";
+@use "barra";
+@use "enRegi";
+@use "enRefu";
+@use "selectores";
+
+html {
+  background: var(--bgWeb);
+  --bgWeb: #4762e6;
+
+  --color1: #c2caef;
+  --color2: #4dbcf4;
+  --color3: #4762e6;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  --select-border: #777;
+  --select-focus: blue;
+  --select-arrow: var(--select-border);
+  
+}
+
+html[data-theme="sol"] {
+  background: var(--bgWeb);
+
+  --bgWeb: #FFFFFF;
+
+
+}
+
+@media (max-width: 420px) {
+  html {
+    background: #FFFFFF;
+  }
+}
+
+.byus {
+  font-family: 'Rock Salt', cursive;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.bps {
+  -webkit-box-shadow: 0px 10px 15px 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 10px 15px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 10px 15px 1px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 420px) {
+  .bps {
+    -webkit-box-shadow: 0px 10px 15px 1px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 10px 15px 1px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 15px 1px rgba(0, 0, 0, 0);
+  }
+}
+
+.linkNoStyle {
+  text-decoration: none;
+}

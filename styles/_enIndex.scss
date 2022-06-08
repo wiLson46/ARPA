@@ -1,0 +1,114 @@
+.granContenedor {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  align-items: center;
+  border-radius: 50px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+
+@media (max-width: 420px) {
+  .granContenedor {
+    border-radius: 0;
+    width: 100vw;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 1025px) {
+  .granContenedor {
+    margin-top: 100px;
+  }
+}
+
+.contenedorTitulo {
+  background-color: #4762e6;
+  width: 500px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedorInputs {
+  width: 500px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  input:focus {
+    outline: none;
+    border: 1px solid #4762e6;
+    transition: border 1s ease-in-out;
+  }
+}
+
+.tituloLog {
+  font-family: 'Oswald', sans-serif;
+  font-size: 48px;
+  margin: 0;
+  color: #FFFFFF;
+}
+
+.subtLog {
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+@media (max-width: 420px) {
+  .subtLog {
+    text-align: center;
+  }
+}
+
+#inputEmail {
+  background: url("/images/at-solid.svg") no-repeat right;
+  background-position: 96% 50%;
+  background-size: 20px;
+}
+
+#inputPass {
+  background: url("/images/key-solid.svg") no-repeat right;
+  background-position: 96% 50%;
+  background-size: 20px;
+}
+
+.inputField {
+  padding-left: 15px;
+  padding-right: 25px;
+  width: 260px;
+  height: 50px;
+  border-radius: 12px;
+  border: 1px solid #4ebbf2;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.butLog {
+  width: 300px;
+  height: 50px;
+  margin-top: 50px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  border: 1px solid #4ebbf2;
+  transition: background-color 1s ease-in-out,
+    color 1s ease-in-out;
+}
+
+.butLog:hover {
+  background-color: #4762e6;
+  color: #FFFFFF;
+  cursor: pointer;
+}

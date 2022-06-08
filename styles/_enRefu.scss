@@ -1,0 +1,93 @@
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+  font-family: 'Montserrat', sans-serif;
+}
+
+table tr {
+  background-color: #FFFFFF;
+  border: 1px solid #ddd;
+}
+
+table th,
+table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 420px) {
+  table th,
+  table td {
+    border: 0;
+  }
+}
+
+table th {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #4762e6;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 821px) {
+  table {
+    border: 0;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    border-bottom: 1px solid #ddd;
+    display: block;
+  }
+
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 16px;
+    text-align: right;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table td:first-child {
+    background-color: #4762e6;
+    color: #FFFFFF;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+body:not(.nohover) tbody tr:hover {
+  border: 2px solid #4762e6;
+  background-color: #dae0fc;
+}
+
+.contenedorTabla {
+  margin-left: 25px;
+  margin-right: 25px;
+}

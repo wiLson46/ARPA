@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    color: #FFFFFF;
+}
+
+.browse {
+    //width: 100px;
+    padding-left: 9px;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #4762e6;
+    color: #FFFFFF;
+
+    a:first-child {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 420px) {
+    .browse {
+        display: none;
+    }
+}
+
+.content {
+    width: 100vw;
+    background-color: #4762e6;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #000000;
+}
+
+/*
+@media (max-width: 420px) {
+    .content {
+        width: 100vw;
+    }
+}
+
+@media (min-width: 421px) and (max-width: 1025px) {
+    .content {
+        width: calc(100vw - 17px);
+    }
+}
+
+@media (min-width: 1921px) {
+    .content {
+        width: 100vw;
+    }
+}
+*/
+
+.userBar {
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #4762e6;
+}
+
+
+.userName {
+    margin-right: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.userPic {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin-right: 50px;
+    background-color: #FFFFFF;
+}
+
+@media (max-width: 420px) {
+    .userPic {
+        margin-right: 20px;
+    }
+}
+
+.menuItem {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 3px;
+    min-width: 75px;
+    max-width: 150px;
+    min-height: 75px;
+    border-radius: 12px;
+    font-size: 24px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    transition: background-color 1s ease-in-out;
+
+    a {
+        color: #FFFFFF;
+    }
+}
+
+.itemOnMobile {
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.menuItem:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+@media (max-width: 420px) {
+    .menuItem {
+        padding-top: 0px;
+        max-width: 375px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .menuItem:hover {
+        max-width: 375px;
+    }
+}
+
+.realContent {
+    background-color: #FFFFFF;
+    border-radius: 50px 0 0 0;
+    min-height: calc(100vh - 100px);
+    width: calc(100vw - 100px);
+}
+
+@media (max-width: 420px) {
+    .realContent {
+        border-radius: 0px;
+        height: calc(100vh - 100px);
+        width: calc(100vw);
+    }
+}
+
+.indicadorPagina {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    margin: 25px;
+    margin-left: 50px;
+    font-weight: 700;
+
+}
+
+@media (max-width: 420px) {
+    .indicadorPagina {
+        font-size: 32px;
+        margin: 25px;
+    }
+}
+
+.arpaStats {
+    margin-left: 50px;
+    display: flex;
+}
+
+.statsText {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    width: 500px;
+}
+
+.statsNumbers {
+    font-weight: 700;
+}
