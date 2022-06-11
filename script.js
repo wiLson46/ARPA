@@ -12,3 +12,18 @@ toggler.onclick = function () {
         barra.className = "closed";
     }
 }
+
+function myFunction() {
+    var x = document.getElementById("toastOK");
+    x.className = "show";
+    setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+}
+
+function myFunction2() {
+    var x = document.getElementById("toastNOT");
+    x.className = "show";
+    setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+}
+
+
+

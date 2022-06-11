@@ -645,6 +645,11 @@ body:not(.nohover) tbody tr:hover {
   margin-right: 25px;
 }
 
+.contenedorFiltros {
+  margin: 25px;
+  margin-left: 50px;
+}
+
 select {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -678,20 +683,26 @@ select::-ms-expand {
   font-size: 1.25rem;
   cursor: pointer;
   line-height: 1.1;
+  /*
+  // Optional styles
+  // remove for transparency
   background-color: #fff;
   background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+
+
+  // Custom arrow
+  &:not(.select--multiple)::after {
+    content: "";
+    justify-self: end;
+    width: 0.8em;
+    height: 0.5em;
+    background-color: var(--select-arrow);
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+  }
+  */
 }
 .select select, .select::after {
   grid-area: select;
-}
-.select:not(.select--multiple)::after {
-  content: "";
-  justify-self: end;
-  width: 0.8em;
-  height: 0.5em;
-  background-color: var(--select-arrow);
-  -webkit-clip-path: polygon(100% 0%, 0 0%, 50% 100%);
-          clip-path: polygon(100% 0%, 0 0%, 50% 100%);
 }
 
 select:focus + .focus {
@@ -720,6 +731,88 @@ select[multiple] option {
   outline-color: var(--select-focus);
 }
 
+#toastOK {
+  visibility: hidden;
+  width: 400px;
+  background-color: green;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 16px;
+  position: fixed;
+  right: 0;
+  top: 100px;
+  font-size: 24px;
+  font-family: "Oswald", sans-serif;
+}
+
+#toastOK.show {
+  visibility: visible;
+  -webkit-animation: fadein 1.5s, fadeout 1.5s 2s;
+  animation: fadein 1.5s, fadeout 1.5s 2s;
+  border-radius: 0px 0px 0px 25px;
+}
+
+#toastNOT {
+  visibility: hidden;
+  width: 400px;
+  background-color: red;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 16px;
+  position: fixed;
+  right: 0;
+  top: 100px;
+  font-size: 24px;
+  font-family: "Oswald", sans-serif;
+}
+
+#toastNOT.show {
+  visibility: visible;
+  -webkit-animation: fadein 1.5s, fadeout 1.5s 2s;
+  animation: fadein 1.5s, fadeout 1.5s 2s;
+  border-radius: 0px 0px 0px 25px;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    right: -400px;
+    opacity: 0;
+  }
+  to {
+    right: 0px;
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  from {
+    right: -400px;
+    opacity: 0;
+  }
+  to {
+    right: 0px;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeout {
+  from {
+    right: 0px;
+    opacity: 1;
+  }
+  to {
+    right: -400px;
+    opacity: 0;
+  }
+}
+@keyframes fadeout {
+  from {
+    right: 0px;
+    opacity: 1;
+  }
+  to {
+    right: -400px;
+    opacity: 0;
+  }
+}
 html {
   background: var(--bgWeb);
   --bgWeb: #4762e6;

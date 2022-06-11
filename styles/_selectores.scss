@@ -45,12 +45,13 @@ select {
     font-size: 1.25rem;
     cursor: pointer;
     line-height: 1.1;
-  
+     /*
     // Optional styles
     // remove for transparency
     background-color: #fff;
     background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
   
+ 
     // Custom arrow
     &:not(.select--multiple)::after {
       content: "";
@@ -60,6 +61,8 @@ select {
       background-color: var(--select-arrow);
       clip-path: polygon(100% 0%, 0 0%, 50% 100%);
     }
+    */
+
   }
   
   // Interim solution until :focus-within has better support

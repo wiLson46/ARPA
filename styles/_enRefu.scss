@@ -23,6 +23,7 @@ table td {
 }
 
 @media (max-width: 420px) {
+
   table th,
   table td {
     border: 0;
@@ -90,4 +91,9 @@ body:not(.nohover) tbody tr:hover {
 .contenedorTabla {
   margin-left: 25px;
   margin-right: 25px;
+}
+
+.contenedorFiltros {
+  margin: 25px;
+  margin-left: 50px;
 }

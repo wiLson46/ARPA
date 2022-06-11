@@ -1,0 +1,62 @@
+#toastOK {
+    visibility: hidden;
+    width: 400px;
+    background-color: green;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 16px;
+    position: fixed;
+    right:0;
+    top: 100px;
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  #toastOK.show {
+    visibility: visible;
+    -webkit-animation: fadein 1.5s, fadeout 1.5s 2s;
+    animation: fadein 1.5s, fadeout 1.5s 2s;
+    border-radius: 0px 0px 0px 25px;
+  }
+  
+  #toastNOT {
+    visibility: hidden;
+    width: 400px;
+    background-color: red;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 16px;
+    position: fixed;
+    right:0;
+    top: 100px;
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  #toastNOT.show {
+    visibility: visible;
+    -webkit-animation: fadein 1.5s, fadeout 1.5s 2s;
+    animation: fadein 1.5s, fadeout 1.5s 2s;
+    border-radius: 0px 0px 0px 25px;
+  }
+
+
+  @-webkit-keyframes fadein {
+    from {right: -400px; opacity: 0;}
+    to {right: 0px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {right: -400px; opacity: 0;}
+    to {right: 0px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {right: 0px; opacity: 1;}
+    to {right: -400px; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {right: 0px; opacity: 1;}
+    to {right: -400px; opacity: 0;}
+  }
