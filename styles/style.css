@@ -252,6 +252,16 @@ body {
     width: 100vw;
   }
 }
+@media (min-width: 1024px) and (max-width: 1367px) {
+  .realContent {
+    height: 100vh;
+  }
+}
+@media (min-width: 768px) and (max-width: 820px) {
+  .realContent {
+    height: 100vh;
+  }
+}
 .indicadorPagina {
   font-family: "Montserrat", sans-serif;
   font-size: 48px;
@@ -269,14 +279,40 @@ body {
 .arpaStats {
   margin-left: 50px;
   display: flex;
+  flex-wrap: wrap;
+  width: calc(100vw - 100px);
 }
 
 .statsText {
   font-family: "Montserrat", sans-serif;
   font-size: 32px;
   width: 500px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
+@media (max-width: 375px) {
+  .statsText {
+    font-size: 20px;
+  }
+}
+@media (min-width: 376px) and (max-width: 420px) {
+  .statsText {
+    font-size: 24px;
+  }
+}
+@media (min-width: 421px) and (max-width: 1023px) {
+  .statsText {
+    font-size: 42px;
+    width: 600px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1367px) {
+  .statsText {
+    font-size: 24px;
+    width: 330px;
+  }
+}
 .statsNumbers {
   font-weight: 700;
 }
@@ -355,7 +391,7 @@ body {
   .menuItem {
     margin-top: 10px;
     margin-bottom: 10px;
-    min-height: 70px;
+    min-height: 60px;
   }
 }
 @media (max-width: 420px) {
@@ -610,6 +646,7 @@ table th {
   table tr {
     border-bottom: 1px solid #ddd;
     display: block;
+    margin-bottom: 15px;
   }
 
   table td {
