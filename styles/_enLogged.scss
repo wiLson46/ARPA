@@ -149,13 +149,13 @@ body {
         width: 100vw;
     }
 }
-
+/*
 @media (min-width: 1024px) and (max-width: 1367px) {
     .realContent {
         height: 100vh;
     }
 }
-
+*/
 @media (min-width: 768px) and (max-width: 820px) {
     .realContent {
         height: 100vh;
@@ -183,7 +183,6 @@ body {
     margin-left: 50px;
     display: flex;
     flex-wrap: wrap;
-    width: calc(100vw - 100px);
 }
 
 

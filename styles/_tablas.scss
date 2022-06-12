@@ -10,14 +10,14 @@ table {
 
 table tr {
   background-color: #FFFFFF;
-  border: 1px solid #ddd;
+  border: 1px solid var(--color4);
 }
 
 table th,
 table td {
   padding: 10px;
   text-align: center;
-  border: 1px solid #ccc;
+  border: 1px solid var(--color4);
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -34,7 +34,7 @@ table th {
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
-  background-color: #4762e6;
+  background-color: var(--color3);
   color: #FFFFFF;
 }
 
@@ -55,13 +55,13 @@ table th {
   }
 
   table tr {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--color4);
     display: block;
     margin-bottom: 15px;
   }
 
   table td {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--color4);
     display: block;
     font-size: 16px;
     text-align: right;
@@ -75,7 +75,7 @@ table th {
   }
 
   table td:first-child {
-    background-color: #4762e6;
+    background-color: var(--color3);
     color: #FFFFFF;
   }
 
@@ -85,16 +85,30 @@ table th {
 }
 
 body:not(.nohover) tbody tr:hover {
-  border: 2px solid #4762e6;
-  background-color: #dae0fc;
+  border: 2px solid var(--color3);
+  background-color: var(--color1);
 }
 
 .contenedorTabla {
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+@media (max-width: 420px) {
+  .contenedorTabla {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
 }
 
 .contenedorFiltros {
   margin: 25px;
   margin-left: 50px;
+}
+
+@media (max-width: 420px) {
+  .contenedorFiltros {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
 }
