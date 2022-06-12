@@ -25,10 +25,10 @@
         position: absolute;
         width: 30px;
         height: 2px;
-        background: #FFFFFF;
+        background: var(--colorW);
         transition: 0.2s;
         transform: translateY(-10px);
-        box-shadow: 0 10px 0 #FFFFFF;
+        box-shadow: 0 10px 0 var(--colorW);
     }
 
     &:after {
@@ -36,14 +36,14 @@
         position: absolute;
         width: 30px;
         height: 2px;
-        background: #FFFFFF;
+        background: var(--colorW);
         transition: 0.2s;
         transform: translateY(10px);
     }
 
     &.active::before {
         transform: translateY(0px) rotate(45deg);
-        box-shadow: 0 0px 0 #FFFFFF;
+        box-shadow: 0 0px 0 var(--colorW);
     }
 
     &.active::after {
@@ -62,7 +62,7 @@
     display: none;
     flex-direction: column;
     align-items: flex-start;
-    color: #FFFFFF;
+    color: var(--colorW);
     background-color: rgba(71, 98, 230, 0.7);
     backdrop-filter: blur(4px);
 }
@@ -72,7 +72,7 @@
         padding-top: 25px;
         padding-left: 40px;
     }
-    
+
     .menuItem {
         margin-top: 10px;
         margin-bottom: 10px;
@@ -85,6 +85,7 @@
     #browseMobile {
         display: flex;
     }
+
     .fa-solid {
         min-width: 30px;
     }

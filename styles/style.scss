@@ -23,7 +23,7 @@ html {
   --select-border: #777;
   --select-focus: blue;
   --select-arrow: var(--select-border);
-  
+
 }
 
 html[data-theme="sol"] {
@@ -33,7 +33,7 @@ html[data-theme="sol"] {
 
 @media (max-width: 420px) {
   html {
-    background: #FFFFFF;
+    background: var(--colorW);
   }
 }
 

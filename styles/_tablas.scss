@@ -1,5 +1,5 @@
 table {
-  border: 1px solid #ccc;
+  border: 1px solid var(--color4);
   border-collapse: collapse;
   margin: 0;
   padding: 0;
@@ -9,7 +9,7 @@ table {
 }
 
 table tr {
-  background-color: #FFFFFF;
+  background-color: var(--colorW);
   border: 1px solid var(--color4);
 }
 
@@ -35,7 +35,7 @@ table th {
   font-weight: 700;
   text-transform: uppercase;
   background-color: var(--color3);
-  color: #FFFFFF;
+  color: var(--colorW);
 }
 
 @media screen and (max-width: 821px) {
@@ -76,7 +76,7 @@ table th {
 
   table td:first-child {
     background-color: var(--color3);
-    color: #FFFFFF;
+    color: var(--colorW);
   }
 
   table td:last-child {
