@@ -82,13 +82,20 @@
 }
 
 
-@media (max-width: 420px) {
+@media (max-width: 768px) {
     #browseMobile {
         display: flex;
     }
 
     .fa-solid {
         min-width: 30px;
+    }
+}
+
+@media (max-width: 420px) {
+    .menuItem {
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 }
 
