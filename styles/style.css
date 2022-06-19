@@ -765,7 +765,7 @@ body:not(.nohover) tbody tr:hover {
   }
 }
 .botonFiltrar {
-  width: 230px;
+  width: 115px;
   height: 40px;
   background: var(--color3);
   color: var(--colorW);
@@ -775,6 +775,18 @@ body:not(.nohover) tbody tr:hover {
   cursor: pointer;
 }
 
+@media (min-width: 421px) and (max-width: 1024px) {
+  .botonFiltrar {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 420px) {
+  .botonFiltrar {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
 #toastOK {
   visibility: hidden;
   width: 400px;
