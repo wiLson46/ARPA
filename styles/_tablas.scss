@@ -38,7 +38,7 @@ table th {
   color: var(--colorW);
 }
 
-@media screen and (max-width: 821px) {
+@media (max-width: 821px) {
   table {
     border: 0;
   }
@@ -92,23 +92,22 @@ body:not(.nohover) tbody tr:hover {
 .contenedorTabla {
   margin-left: 50px;
   margin-right: 50px;
+  overflow-y: scroll;
+  height: 604px;
 }
 
 @media (max-width: 420px) {
   .contenedorTabla {
     margin-left: 25px;
     margin-right: 25px;
+    overflow-y: auto;
   }
 }
 
-.contenedorFiltros {
-  margin: 25px;
-  margin-left: 50px;
-}
-
-@media (max-width: 420px) {
-  .contenedorFiltros {
-    margin-left: 25px;
-    margin-right: 25px;
+@media (min-width: 1024px) and (max-width: 1367px) {
+  .contenedorTabla {
+    height: 445px;
   }
 }
+
+

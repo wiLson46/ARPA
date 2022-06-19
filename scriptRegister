@@ -1,0 +1,22 @@
+function register() {
+    const [day, month, year] = document.getElementById("inputDate").value.split('/')
+    const date = new Date(+year, month - 1, +day);
+    fetch('http://localhost:8080/nuevousuario', {
+        method: 'POST',
+        body: JSON.stringify({
+            "nombre": document.getElementById("inputNombre").value,
+            "apellido": document.getElementById("inputApellido").value,
+            "dni": document.getElementById("inputDNI").value,
+            "telefono": document.getElementById("inputPhone").value,
+            "fechaNacimiento": date,
+            //"domicilio": document.getElementById("").value,
+            "contraseña": document.getElementById("inputPass").value,
+            //"usuario": document.getElementById("").value,
+            "mail": document.getElementById("inputEmail").value,
+        }),
+        headers: {
+            "Content-type": "application/json",
+        }
+    }).then(response => response.text())
+    .then(text => document.getElementById("resp").innerText = text)
+    }

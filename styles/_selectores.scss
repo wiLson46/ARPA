@@ -1,82 +1,105 @@
-$width: 200px;
-$height: 40px;
+.miniContainer {
+  display: flex;
+  flex-direction: column;
 
-.rh-dropdown {
-  >.dropdown {
+  label {
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+  }
+
+  .dropdown {
     vertical-align: middle;
   }
 
   .dropdown {
     display: inline-block;
     overflow: hidden;
-    width: $width;
-    height: $height;
-    background: #f5f5f5;
-    margin-top: 0px;
+    width: 230px;
+    height: 40px;
+    background: var(--color5);
     border: 0;
-
-    &+.dropdown {
-      border-left: 1px dashed #ddd;
-    }
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      right: 10px;
-      width: 0;
-      height: 0;
-      pointer-events: none;
-    }
-
-    &:before {
-      border-top-style: solid;
-      border-bottom: none;
-      margin-top: -2px;
-    }
-
-    .dropdown-select {
-      position: relative;
-      width: 100%;
-      margin: 0;
-      padding: 6px 8px 6px 10px;
-      height: $height;
-      font-size: 13px;
-      border: 0;
-      -webkit-appearance: none;
-
-      @-moz-document url-prefix() {
-        padding-left: 6px;
-      }
-
-      &>option {
-        margin: 3px;
-        padding: 6px 8px;
-        text-shadow: none;
-        cursor: pointer;
-      }
-    }
-  }
-
-  //end dropdown
-}
-
-.ie9 {
-  .dropdown {
-    z-index: 1;
-  }
-
-  .dropdown-select {
-    z-index: -1;
-  }
-
-  .dropdown-select:focus {
-    z-index: 3;
+    margin-right: 30px;
+    font-size: 16px;
   }
 }
+
+@media (max-width: 420px) {
+  .miniContainer .dropdown {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 341px;
+  }
+}
+
+@media (max-width: 375px) {
+  .miniContainer .dropdown {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 323px;
+  }
+}
+
+.miniContainer input {
+  display: inline-block;
+  overflow: hidden;
+  width: 300px;
+  height: 38px;
+  background: var(--color5);
+  border: 0;
+  margin-right: 30px;
+  font-size: 16px;
+}
+
+@media (max-width: 420px) {
+  .miniContainer input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 337px;
+  }
+}
+
+@media (max-width: 375px) {
+  .miniContainer input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 319px;
+  }
+}
+
+.dropdown option {
+  cursor: pointer;
+  font-size: 16px;
+}
+
 
 /* [ std-select ] */
 .std-select {
-  width: $width;
-  height: $height;
+  width: 230px;
+  height: 40px;
+}
+
+.contenedorFiltros {
+  margin: 25px;
+  margin-left: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+@media (max-width: 420px) {
+  .contenedorFiltros {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
+
+.botonFiltrar{
+  width: 230px;
+    height: 40px;
+    background: var(--color3);
+    color: var(--colorW);
+    border: 0;
+    margin-right: 30px;
+    font-size: 16px;
+    cursor: pointer;
 }
