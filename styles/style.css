@@ -462,6 +462,36 @@ body {
   font-weight: 700;
 }
 
+.togglerFilteringPosition {
+  position: absolute;
+  right: 25px;
+  top: 125px;
+  display: none;
+  z-index: 1;
+}
+
+@media (max-width: 420px) {
+  .togglerFilteringPosition {
+    display: block;
+  }
+}
+.gearToggle {
+  font-size: 36px;
+}
+
+.closedFiltering {
+  display: flex;
+}
+
+@media (max-width: 1023px) {
+  .closedFiltering {
+    display: none !important;
+  }
+}
+.openedFiltering {
+  display: flex;
+}
+
 .togglerPosition {
   position: absolute;
   left: 30px;
@@ -525,6 +555,7 @@ body {
   background-color: rgba(71, 98, 230, 0.7);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
+  z-index: 2;
 }
 
 @media (max-width: 375px) {
@@ -750,7 +781,7 @@ body:not(.nohover) tbody tr:hover {
   height: 40px;
 }
 
-.contenedorFiltros {
+#contenedorFiltros {
   margin: 25px;
   margin-left: 50px;
   display: flex;
@@ -759,7 +790,7 @@ body:not(.nohover) tbody tr:hover {
 }
 
 @media (max-width: 420px) {
-  .contenedorFiltros {
+  #contenedorFiltros {
     margin-left: 25px;
     margin-right: 25px;
   }

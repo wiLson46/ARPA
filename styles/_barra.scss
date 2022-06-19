@@ -65,6 +65,7 @@
     color: var(--colorW);
     background-color: rgba(71, 98, 230, 0.7);
     backdrop-filter: blur(4px);
+    z-index: 2;
 }
 
 @media (max-width: 375px) {

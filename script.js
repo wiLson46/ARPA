@@ -26,4 +26,15 @@ function myFunction2() {
 }
 
 
+const showFiltering = document.getElementById('contenedorFiltros')
+const togglerFiltering = document.getElementById('toggleF');
+togglerFiltering.onclick = function () {
+    togglerFiltering.classList.toggle('active');
 
+    if (showFiltering.className == "closedFiltering") {
+        showFiltering.className = "openedFiltering";
+    }
+    else {
+        showFiltering.className = "closedFiltering";
+    }
+}

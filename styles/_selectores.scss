@@ -78,7 +78,7 @@
   height: 40px;
 }
 
-.contenedorFiltros {
+#contenedorFiltros {
   margin: 25px;
   margin-left: 50px;
   display: flex;
@@ -87,7 +87,7 @@
 }
 
 @media (max-width: 420px) {
-  .contenedorFiltros {
+  #contenedorFiltros {
     margin-left: 25px;
     margin-right: 25px;
   }

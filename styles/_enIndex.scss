@@ -432,7 +432,6 @@ body {
   }
 }
 
-
 .indicadorPagina {
   font-family: 'Montserrat', sans-serif;
   font-size: 48px;
@@ -491,4 +490,36 @@ body {
 
 .statsNumbers {
   font-weight: 700;
+}
+
+.togglerFilteringPosition {
+  position: absolute;
+  right: 25px;
+  top: 125px;
+  display: none;
+  z-index: 1;
+}
+
+@media (max-width: 420px) {
+  .togglerFilteringPosition {
+    display: block;
+  }
+}
+
+.gearToggle {
+  font-size: 36px;
+}
+
+.closedFiltering {
+  display: flex;
+}
+
+@media (max-width: 1023px) {
+  .closedFiltering {
+    display: none !important;
+  }
+}
+
+.openedFiltering {
+  display: flex;
 }
