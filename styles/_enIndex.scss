@@ -481,7 +481,13 @@ body {
   }
 }
 
-@media (min-width: 421px) and (max-width: 1023px) {
+@media (min-width: 421px) and (max-width: 766px) {
+  .statsText {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
   .statsText {
     font-size: 42px;
     width: 600px;
