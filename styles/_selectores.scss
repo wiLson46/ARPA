@@ -109,19 +109,26 @@
   }
 }
 
-.botonFiltrar {
-  width: 115px;
+.botonEnSelect {
+  min-width: 115px;
   height: 40px;
   background: var(--color3);
   color: var(--colorW);
   border: 0;
   margin-right: 30px;
-  font-size: 16px;
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
   cursor: pointer;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#botonAddRefu {
+  background: var(--color6);
 }
 
 @media (min-width: 421px) and (max-width: 1024px) {
-  .botonFiltrar {
+  .botonEnSelect {
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -129,7 +136,7 @@
 
 
 @media (max-width: 420px) {
-  .botonFiltrar {
+  .botonEnSelect {
     margin-top: 10px;
     margin-bottom: 10px;
   }
