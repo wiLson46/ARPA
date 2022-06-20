@@ -577,7 +577,6 @@ body {
   display: flex;
 }
 .mainviewAjustes .ajustesCol1 {
-  border: 1px solid red;
   width: 340px;
   display: flex;
   flex-direction: column;
@@ -595,18 +594,18 @@ body {
   background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(194, 202, 239) 25%, rgb(71, 98, 230) 100%);
 }
 .mainviewAjustes .ajustesCol2 {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   padding: 10px;
   box-sizing: border-box;
+  flex: 1;
 }
 .mainviewAjustes .ajustesCol3 {
-  border: 1px solid red;
   padding: 10px;
   box-sizing: border-box;
+  flex: 1;
 }
 
 @media (max-width: 767px) {

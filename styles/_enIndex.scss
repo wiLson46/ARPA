@@ -609,7 +609,7 @@ body {
   //max-width: calc(100vw - 400px);
 
   .ajustesCol1 {
-    border: 1px solid red;
+    //border: 1px solid red;
     width: 340px;
     display: flex;
     flex-direction: column;
@@ -630,7 +630,7 @@ body {
   }
   
   .ajustesCol2 {
-    border: 1px solid red;
+    //border: 1px solid red;
     //width: 690px;
     display: flex;
     flex-direction: column;
@@ -638,12 +638,15 @@ body {
     justify-content: center;
     padding: 10px;
     box-sizing: border-box;
+    flex: 1;
+
   }
   
   .ajustesCol3 {
-    border: 1px solid red;
+    //border: 1px solid red;
     padding: 10px;
     box-sizing: border-box;
+    flex: 1;
   }
 }
 
