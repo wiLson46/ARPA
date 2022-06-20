@@ -26,17 +26,20 @@ function myFunction2() {
 }
 
 
-const showFiltering = document.getElementById('contenedorFiltros')
+const showFiltering = document.getElementById('contenedorFiltros');
 const togglerFiltering = document.getElementById('toggleF');
+//const changeTableHeight = document.getElementById('tabConte');
 togglerFiltering.onclick = function () {
     togglerFiltering.classList.toggle('active');
 
     if (showFiltering.className == "closedFiltering") {
         showFiltering.className = "openedFiltering";
         togglerFiltering.className = "giraRuedaAd";
+       // changeTableHeight.style.height = "500px";
     }
     else {
         showFiltering.className = "closedFiltering";
         togglerFiltering.className = "giraRuedaAt";
+       // changeTableHeight.style.height = "845px";
     }
 }

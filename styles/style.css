@@ -10,14 +10,14 @@
   background-color: var(--colorW);
 }
 
-@media (max-width: 420px) {
+@media (max-width: 767px) {
   .granContenedor {
     margin-top: 0px;
     border-radius: 0;
     width: 100vw;
   }
 }
-@media (min-width: 421px) and (max-width: 1025px) {
+@media (min-width: 767px) and (max-width: 1025px) {
   .granContenedor {
     margin-top: 100px;
   }
@@ -59,7 +59,7 @@
   margin-top: 10px;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 767px) {
   .subtLog {
     text-align: center;
   }
@@ -121,7 +121,7 @@
   background-color: var(--colorW);
 }
 
-@media (max-width: 420px) {
+@media (max-width: 767px) {
   .hugeContenedor {
     margin-top: 0;
     height: auto;
@@ -129,7 +129,7 @@
     border-radius: 0;
   }
 }
-@media (min-width: 421px) and (max-width: 1025px) {
+@media (min-width: 767px) and (max-width: 1025px) {
   .hugeContenedor {
     margin-top: 100px;
     width: 700px;
@@ -162,7 +162,7 @@
   transition: border 1s ease-in-out;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 767px) {
   .contenedorInputs2 {
     width: 100vw;
     height: auto;
@@ -182,7 +182,7 @@
   transition: border 1s ease-in-out;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 767px) {
   .contenedorInputs3 {
     width: 100vw;
     flex-direction: column;
@@ -194,7 +194,7 @@
   margin-right: 10px;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 767px) {
   .spacer1 {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -480,33 +480,33 @@ body {
 }
 
 .giraRuedaAd {
-  -webkit-animation: spin 2s ease-in-out;
-          animation: spin 2s ease-in-out;
+  -webkit-animation: spinAd 2s ease-in-out;
+          animation: spinAd 2s ease-in-out;
 }
 
-@-webkit-keyframes spin {
+@-webkit-keyframes spinAd {
   100% {
     transform: rotate(540deg);
   }
 }
 
-@keyframes spin {
+@keyframes spinAd {
   100% {
     transform: rotate(540deg);
   }
 }
 .giraRuedaAt {
-  -webkit-animation: spin2 2s ease-in-out;
-          animation: spin2 2s ease-in-out;
+  -webkit-animation: spinAt 2s ease-in-out;
+          animation: spinAt 2s ease-in-out;
 }
 
-@-webkit-keyframes spin2 {
+@-webkit-keyframes spinAt {
   100% {
     transform: rotate(-540deg);
   }
 }
 
-@keyframes spin2 {
+@keyframes spinAt {
   100% {
     transform: rotate(-540deg);
   }
@@ -732,7 +732,7 @@ body:not(.nohover) tbody tr:hover {
   margin-left: 50px;
   margin-right: 50px;
   overflow-y: scroll;
-  height: 604px;
+  height: 550px;
 }
 
 @media (max-width: 767px) {
@@ -769,6 +769,13 @@ body:not(.nohover) tbody tr:hover {
   font-size: 16px;
 }
 
+@media (min-width: 421px) and (max-width: 767px) {
+  .miniContainer .dropdown {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 430px;
+  }
+}
 @media (max-width: 420px) {
   .miniContainer .dropdown {
     margin-top: 10px;
@@ -794,6 +801,13 @@ body:not(.nohover) tbody tr:hover {
   font-size: 16px;
 }
 
+@media (min-width: 421px) and (max-width: 767px) {
+  .miniContainer input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 430px;
+  }
+}
 @media (max-width: 420px) {
   .miniContainer input {
     margin-top: 10px;
@@ -982,7 +996,7 @@ html[data-theme=sol] {
   box-shadow: 0px 10px 15px 1px rgba(0, 0, 0, 0.15);
 }
 
-@media (max-width: 420px) {
+@media (max-width: 767px) {
   .bps {
     box-shadow: 0px 10px 15px 1px rgba(0, 0, 0, 0);
   }

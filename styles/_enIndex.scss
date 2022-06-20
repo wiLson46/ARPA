@@ -10,7 +10,7 @@
   background-color: var(--colorW);
 }
 
-@media (max-width: 420px) {
+@media (max-width: 767px) {
   .granContenedor {
     margin-top: 0px;
     border-radius: 0;
@@ -18,7 +18,7 @@
   }
 }
 
-@media (min-width: 421px) and (max-width: 1025px) {
+@media (min-width: 767px) and (max-width: 1025px) {
   .granContenedor {
     margin-top: 100px;
   }
@@ -62,7 +62,7 @@
   margin-top: 10px;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 767px) {
   .subtLog {
     text-align: center;
   }
@@ -126,7 +126,7 @@
   background-color: var(--colorW);
 }
 
-@media (max-width: 420px) {
+@media (max-width: 767px) {
   .hugeContenedor {
     margin-top: 0;
     height: auto;
@@ -135,7 +135,7 @@
   }
 }
 
-@media (min-width: 421px) and (max-width: 1025px) {
+@media (min-width: 767px) and (max-width: 1025px) {
   .hugeContenedor {
     margin-top: 100px;
     width: 700px;
@@ -170,7 +170,7 @@
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 767px) {
   .contenedorInputs2 {
     width: 100vw;
     height: auto;
@@ -192,7 +192,7 @@
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 767px) {
   .contenedorInputs3 {
     width: 100vw;
     flex-direction: column;
@@ -205,7 +205,7 @@
   margin-right: 10px;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 767px) {
   .spacer1 {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -512,16 +512,16 @@ body {
 }
 
 .giraRuedaAd{
-  animation:spin 2s ease-in-out;
+  animation:spinAd 2s ease-in-out;
 }
 
-@keyframes spin { 100% { -webkit-transform: rotate(540deg); transform:rotate(540deg); } }
+@keyframes spinAd { 100% { -webkit-transform: rotate(540deg); transform:rotate(540deg); } }
 
 .giraRuedaAt{
-  animation:spin2 2s ease-in-out;
+  animation:spinAt 2s ease-in-out;
 }
 
-@keyframes spin2 { 100% { -webkit-transform: rotate(-540deg); transform:rotate(-540deg); } }
+@keyframes spinAt { 100% { -webkit-transform: rotate(-540deg); transform:rotate(-540deg); } }
 
 
 .closedFiltering {
