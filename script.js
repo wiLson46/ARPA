@@ -43,3 +43,13 @@ togglerFiltering.onclick = function () {
        // changeTableHeight.style.height = "845px";
     }
 }
+
+/*
+width = screen.availwidth;
+height = screen.availheight;
+
+if (width > 0 && height >0) {
+    window.location.href = "http://localhost/main.php?width=" + width + "&height=" + height;
+} else 
+    exit();
+*/

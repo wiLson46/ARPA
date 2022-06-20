@@ -909,6 +909,13 @@ body:not(.nohover) tbody tr:hover {
   padding-right: 20px;
 }
 
+#botonEditUser {
+  background: var(--color7);
+  margin-left: auto;
+  margin-right: 25px;
+  color: var(--colorB);
+}
+
 #botonAddRefu, #botonAddPerso, #botonAddMasco {
   background: var(--color6);
   margin-left: auto;
@@ -921,7 +928,7 @@ body:not(.nohover) tbody tr:hover {
     margin-bottom: 10px;
   }
 
-  #botonAddRefu, #botonAddPerso, #botonAddMasco {
+  #botonAddRefu, #botonAddPerso, #botonAddMasco, #botonEditUser {
     margin-right: 0px;
   }
 }
@@ -931,7 +938,7 @@ body:not(.nohover) tbody tr:hover {
     margin-bottom: 10px;
   }
 
-  #botonAddRefu, #botonAddPerso, #botonAddMasco {
+  #botonAddRefu, #botonAddPerso, #botonAddMasco, #botonEditUser {
     margin-right: 0px;
   }
 }
@@ -1027,6 +1034,7 @@ html {
   --color4: #d4d4d4;
   --color5: rgb(230, 230, 255);
   --color6: #007900;
+  --color7: #d4d400;
   display: flex;
   align-items: center;
   justify-content: center;
