@@ -33,8 +33,10 @@ togglerFiltering.onclick = function () {
 
     if (showFiltering.className == "closedFiltering") {
         showFiltering.className = "openedFiltering";
+        togglerFiltering.className = "giraRuedaAd";
     }
     else {
         showFiltering.className = "closedFiltering";
+        togglerFiltering.className = "giraRuedaAt";
     }
 }

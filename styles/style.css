@@ -479,6 +479,38 @@ body {
   font-size: 36px;
 }
 
+.giraRuedaAd {
+  -webkit-animation: spin 2s ease-in-out;
+          animation: spin 2s ease-in-out;
+}
+
+@-webkit-keyframes spin {
+  100% {
+    transform: rotate(540deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(540deg);
+  }
+}
+.giraRuedaAt {
+  -webkit-animation: spin2 2s ease-in-out;
+          animation: spin2 2s ease-in-out;
+}
+
+@-webkit-keyframes spin2 {
+  100% {
+    transform: rotate(-540deg);
+  }
+}
+
+@keyframes spin2 {
+  100% {
+    transform: rotate(-540deg);
+  }
+}
 .closedFiltering {
   display: flex;
 }
