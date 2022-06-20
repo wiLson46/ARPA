@@ -125,12 +125,18 @@
 
 #botonAddRefu {
   background: var(--color6);
+  margin-left: auto;
+  margin-right: 25px;
 }
 
 @media (min-width: 421px) and (max-width: 1024px) {
   .botonEnSelect {
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+
+  #botonAddRefu {
+    margin-right: 0px;
   }
 }
 
@@ -139,5 +145,9 @@
   .botonEnSelect {
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+
+  #botonAddRefu {
+    margin-right: 0px;
   }
 }

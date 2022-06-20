@@ -24,6 +24,12 @@
   }
 }
 
+@media (min-width: 1026px) and (max-width: 1366px) {
+  .granContenedor {
+    margin-top: 100px;
+  }
+}
+
 .contenedorTitulo {
   background-color: var(--color3);
   width: 500px;

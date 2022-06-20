@@ -22,6 +22,11 @@
     margin-top: 100px;
   }
 }
+@media (min-width: 1026px) and (max-width: 1366px) {
+  .granContenedor {
+    margin-top: 100px;
+  }
+}
 .contenedorTitulo {
   background-color: var(--color3);
   width: 500px;
@@ -863,6 +868,8 @@ body:not(.nohover) tbody tr:hover {
 
 #botonAddRefu {
   background: var(--color6);
+  margin-left: auto;
+  margin-right: 25px;
 }
 
 @media (min-width: 421px) and (max-width: 1024px) {
@@ -870,11 +877,19 @@ body:not(.nohover) tbody tr:hover {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+
+  #botonAddRefu {
+    margin-right: 0px;
+  }
 }
 @media (max-width: 420px) {
   .botonEnSelect {
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+
+  #botonAddRefu {
+    margin-right: 0px;
   }
 }
 #toastOK {
