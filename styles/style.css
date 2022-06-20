@@ -574,9 +574,39 @@ body {
   margin-left: 50px;
   margin-right: 50px;
   height: 600px;
-  background-color: var(--color4);
   display: flex;
-  overflow: hidden;
+}
+.mainviewAjustes .ajustesCol1 {
+  border: 1px solid red;
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.mainviewAjustes .ajustesCol1 .imgAjustesConte {
+  width: 320px;
+  display: flex;
+  justify-content: center;
+}
+.mainviewAjustes .ajustesCol1 .imagenAvatarAjustes {
+  border-radius: 50px;
+  width: 300px;
+  background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(194, 202, 239) 25%, rgb(71, 98, 230) 100%);
+}
+.mainviewAjustes .ajustesCol2 {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.mainviewAjustes .ajustesCol3 {
+  border: 1px solid red;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 @media (max-width: 767px) {
@@ -591,21 +621,6 @@ body {
     height: 445px;
   }
 }
-.ajustesCol1 {
-  background-color: red;
-  flex-grow: 1;
-}
-
-.ajustesCol2 {
-  background-color: green;
-  flex-grow: 2;
-}
-
-.ajustesCol3 {
-  background-color: purple;
-  flex-grow: 2;
-}
-
 .togglerPosition {
   position: absolute;
   left: 30px;
@@ -1060,6 +1075,48 @@ body:not(.nohover) tbody tr:hover {
     opacity: 0;
   }
 }
+.uploadWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.uploadWrapper label {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+}
+.uploadWrapper .file-upload {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid #2590EB;
+  overflow: hidden;
+  background-image: linear-gradient(to bottom, #2590EB 50%, #FFFFFF 50%);
+  background-size: 100% 200%;
+  transition: all 1s;
+  color: #FFFFFF;
+  font-size: 30px;
+}
+.uploadWrapper .file-upload input[type=file] {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.uploadWrapper .file-upload:hover {
+  background-position: 0 -100%;
+  color: #2590EB;
+}
+
 html {
   background: var(--color3);
   --colorW: #FFFFFF;
