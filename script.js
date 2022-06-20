@@ -28,7 +28,7 @@ function myFunction2() {
 
 const showFiltering = document.getElementById('contenedorFiltros');
 const togglerFiltering = document.getElementById('toggleF');
-//const changeTableHeight = document.getElementById('tabConte');
+//const changeTableHeight = document.getElementById('tabConteRefu');
 togglerFiltering.onclick = function () {
     togglerFiltering.classList.toggle('active');
 
