@@ -116,26 +116,56 @@
                 <div id="contenedorFiltros" class="closedFiltering">
 
                     <div class="miniContainer">
-                        <label for="filterName">Nombre</label>
-                        <input type="text" id="filterName" name="filterName"
+                        <label for="filterNameMasco">Nombre</label>
+                        <input type="text" id="filterNameMasco" name="filterName"
                             placeholder="Ingrese un Nombre para buscar">
                     </div>
 
                     <div class="miniContainer">
-                        <label for="filterCity">Ciudad</label>
-                        <select id="filterCity" class="dropdown">
+                        <label for="filterTypeMasco">Tipo</label>
+                        <select id="filterTypeMasco" class="dropdown">
+                            <option>All</option>
+                            <option>Gato</option>
+                            <option>Perro</option>
+                        </select>
+                    </div>
+
+                    <div class="miniContainer">
+                        <label for="filterSizeMasco">Tamaño</label>
+                        <select id="filterSizeMasco" class="dropdown">
+                            <option>All</option>
+                            <option>Chico</option>
+                            <option>Mediano</option>
+                            <option>Grande</option>
+                        </select>
+                    </div>
+
+                    <div class="miniContainer">
+                        <label for="filterSizeMasco">Raza</label>
+                        <select id="filterSizeMasco" class="dropdown">
+                            <option>All</option>
+                            <option>Sin Raza</option>
+                            <option>Raza</option>
+                        </select>
+                    </div>
+
+                    <div class="miniContainer">
+                        <label for="filterSizeMasco">Genero</label>
+                        <select id="filterSizeMasco" class="dropdown">
+                            <option>All</option>
+                            <option>Femenino</option>
+                            <option>Masculino</option>
+                        </select>
+                    </div>
+
+                    <div class="miniContainer">
+                        <label for="filterCityMasco">Ciudad</label>
+                        <select id="filterCityMasco" class="dropdown">
                             <option>All</option>
                             <option>Rosario</option>
                         </select>
                     </div>
-                    <div class="miniContainer">
-                        <label for="filterCompletion">Refugio completo</label>
-                        <select id="filterCompletion" class="dropdown">
-                            <option>All</option>
-                            <option>Si</option>
-                            <option>No</option>
-                        </select>
-                    </div>
+
 
                     <button id="botonFiltrarMasco" class="botonEnSelect">Filtrar</button>
 
@@ -149,227 +179,230 @@
                             <tr>
                                 <th scope="col">ID</th>
                                 <th scope="col">Nombre</th>
+                                <th scope="col">Tipo</th>
+                                <th scope="col">Tamaño</th>
+                                <th scope="col">Raza</th>
+                                <th scope="col">Genero</th>
                                 <th scope="col">Ciudad</th>
-                                <th scope="col">Dirección</th>
-                                <th scope="col">Telefono</th>
-                                <th scope="col">Email</th>
-                                <th scope="col">Empleados</th>
-                                <th scope="col">Animales</th>
-                                <th scope="col">Detalles</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td scope="row" data-label="ID">####</td>
-                                <td data-label="Nombre">Refugio 4</td>
+                                <td data-label="Nombre">perr1</td>
+                                <td data-label="Tipo">Perro</td>
+                                <td data-label="Tamaño">Mediano</td>
+                                <td data-label="Raza">Sin Raza</td>
+                                <td data-label="Raza">Masculino</td>
                                 <td data-label="Ciudad">Rosario</td>
-                                <td data-label="Dirección">calle falsa 123</td>
-                                <td data-label="Telefono">123456789</td>
-                                <td data-label="Email">ejemplo@dominio.com</td>
-                                <td data-label="Empleados">2</td>
-                                <td data-label="Animales">13/40</td>
-                                <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
                             </tr>
                             <tr>
                                 <td scope="row" data-label="ID">####</td>
-                                <td data-label="Nombre">Refugio 4</td>
+                                <td data-label="Nombre">gat1</td>
+                                <td data-label="Tipo">Gato</td>
+                                <td data-label="Tamaño">Pequeño</td>
+                                <td data-label="Raza">Sin Raza</td>
+                                <td data-label="Raza">Femenino</td>
                                 <td data-label="Ciudad">Rosario</td>
-                                <td data-label="Dirección">calle falsa 123</td>
-                                <td data-label="Telefono">123456789</td>
-                                <td data-label="Email">ejemplo@dominio.com</td>
-                                <td data-label="Empleados">2</td>
-                                <td data-label="Animales">13/40</td>
-                                <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
                             </tr>
                             <tr>
                                 <td scope="row" data-label="ID">####</td>
-                                <td data-label="Nombre">Refugio 4</td>
+                                <td data-label="Nombre">perr1</td>
+                                <td data-label="Tipo">Perro</td>
+                                <td data-label="Tamaño">Mediano</td>
+                                <td data-label="Raza">Sin Raza</td>
+                                <td data-label="Raza">Masculino</td>
                                 <td data-label="Ciudad">Rosario</td>
-                                <td data-label="Dirección">calle falsa 123</td>
-                                <td data-label="Telefono">123456789</td>
-                                <td data-label="Email">ejemplo@dominio.com</td>
-                                <td data-label="Empleados">2</td>
-                                <td data-label="Animales">13/40</td>
-                                <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
                             </tr>
                             <tr>
                                 <td scope="row" data-label="ID">####</td>
-                                <td data-label="Nombre">Refugio 4</td>
+                                <td data-label="Nombre">gat1</td>
+                                <td data-label="Tipo">Gato</td>
+                                <td data-label="Tamaño">Pequeño</td>
+                                <td data-label="Raza">Sin Raza</td>
+                                <td data-label="Raza">Femenino</td>
                                 <td data-label="Ciudad">Rosario</td>
-                                <td data-label="Dirección">calle falsa 123</td>
-                                <td data-label="Telefono">123456789</td>
-                                <td data-label="Email">ejemplo@dominio.com</td>
-                                <td data-label="Empleados">2</td>
-                                <td data-label="Animales">13/40</td>
-                                <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
                             </tr>
                             <tr>
                                 <td scope="row" data-label="ID">####</td>
-                                <td data-label="Nombre">Refugio 4</td>
+                                <td data-label="Nombre">perr1</td>
+                                <td data-label="Tipo">Perro</td>
+                                <td data-label="Tamaño">Mediano</td>
+                                <td data-label="Raza">Sin Raza</td>
+                                <td data-label="Raza">Masculino</td>
                                 <td data-label="Ciudad">Rosario</td>
-                                <td data-label="Dirección">calle falsa 123</td>
-                                <td data-label="Telefono">123456789</td>
-                                <td data-label="Email">ejemplo@dominio.com</td>
-                                <td data-label="Empleados">2</td>
-                                <td data-label="Animales">13/40</td>
-                                <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
                             </tr>
                             <tr>
                                 <td scope="row" data-label="ID">####</td>
-                                <td data-label="Nombre">Refugio 4</td>
+                                <td data-label="Nombre">gat1</td>
+                                <td data-label="Tipo">Gato</td>
+                                <td data-label="Tamaño">Pequeño</td>
+                                <td data-label="Raza">Sin Raza</td>
+                                <td data-label="Raza">Femenino</td>
                                 <td data-label="Ciudad">Rosario</td>
-                                <td data-label="Dirección">calle falsa 123</td>
-                                <td data-label="Telefono">123456789</td>
-                                <td data-label="Email">ejemplo@dominio.com</td>
-                                <td data-label="Empleados">2</td>
-                                <td data-label="Animales">13/40</td>
-                                <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
                             </tr>
                             <tr>
                                 <td scope="row" data-label="ID">####</td>
-                                <td data-label="Nombre">Refugio 4</td>
+                                <td data-label="Nombre">perr1</td>
+                                <td data-label="Tipo">Perro</td>
+                                <td data-label="Tamaño">Mediano</td>
+                                <td data-label="Raza">Sin Raza</td>
+                                <td data-label="Raza">Masculino</td>
                                 <td data-label="Ciudad">Rosario</td>
-                                <td data-label="Dirección">calle falsa 123</td>
-                                <td data-label="Telefono">123456789</td>
-                                <td data-label="Email">ejemplo@dominio.com</td>
-                                <td data-label="Empleados">2</td>
-                                <td data-label="Animales">13/40</td>
-                                <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
                             </tr>
                             <tr>
                                 <td scope="row" data-label="ID">####</td>
-                                <td data-label="Nombre">Refugio 4</td>
+                                <td data-label="Nombre">gat1</td>
+                                <td data-label="Tipo">Gato</td>
+                                <td data-label="Tamaño">Pequeño</td>
+                                <td data-label="Raza">Sin Raza</td>
+                                <td data-label="Raza">Femenino</td>
                                 <td data-label="Ciudad">Rosario</td>
-                                <td data-label="Dirección">calle falsa 123</td>
-                                <td data-label="Telefono">123456789</td>
-                                <td data-label="Email">ejemplo@dominio.com</td>
-                                <td data-label="Empleados">2</td>
-                                <td data-label="Animales">13/40</td>
-                                <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
                             </tr>
                             <tr>
                                 <td scope="row" data-label="ID">####</td>
-                                <td data-label="Nombre">Refugio 4</td>
+                                <td data-label="Nombre">perr1</td>
+                                <td data-label="Tipo">Perro</td>
+                                <td data-label="Tamaño">Mediano</td>
+                                <td data-label="Raza">Sin Raza</td>
+                                <td data-label="Raza">Masculino</td>
                                 <td data-label="Ciudad">Rosario</td>
-                                <td data-label="Dirección">calle falsa 123</td>
-                                <td data-label="Telefono">123456789</td>
-                                <td data-label="Email">ejemplo@dominio.com</td>
-                                <td data-label="Empleados">2</td>
-                                <td data-label="Animales">13/40</td>
-                                <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
                             </tr>
                             <tr>
                                 <td scope="row" data-label="ID">####</td>
-                                <td data-label="Nombre">Refugio 4</td>
+                                <td data-label="Nombre">gat1</td>
+                                <td data-label="Tipo">Gato</td>
+                                <td data-label="Tamaño">Pequeño</td>
+                                <td data-label="Raza">Sin Raza</td>
+                                <td data-label="Raza">Femenino</td>
                                 <td data-label="Ciudad">Rosario</td>
-                                <td data-label="Dirección">calle falsa 123</td>
-                                <td data-label="Telefono">123456789</td>
-                                <td data-label="Email">ejemplo@dominio.com</td>
-                                <td data-label="Empleados">2</td>
-                                <td data-label="Animales">13/40</td>
-                                <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
                             </tr>
                             <tr>
                                 <td scope="row" data-label="ID">####</td>
-                                <td data-label="Nombre">Refugio 4</td>
+                                <td data-label="Nombre">perr1</td>
+                                <td data-label="Tipo">Perro</td>
+                                <td data-label="Tamaño">Mediano</td>
+                                <td data-label="Raza">Sin Raza</td>
+                                <td data-label="Raza">Masculino</td>
                                 <td data-label="Ciudad">Rosario</td>
-                                <td data-label="Dirección">calle falsa 123</td>
-                                <td data-label="Telefono">123456789</td>
-                                <td data-label="Email">ejemplo@dominio.com</td>
-                                <td data-label="Empleados">2</td>
-                                <td data-label="Animales">13/40</td>
-                                <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
                             </tr>
                             <tr>
                                 <td scope="row" data-label="ID">####</td>
-                                <td data-label="Nombre">Refugio 4</td>
+                                <td data-label="Nombre">gat1</td>
+                                <td data-label="Tipo">Gato</td>
+                                <td data-label="Tamaño">Pequeño</td>
+                                <td data-label="Raza">Sin Raza</td>
+                                <td data-label="Raza">Femenino</td>
                                 <td data-label="Ciudad">Rosario</td>
-                                <td data-label="Dirección">calle falsa 123</td>
-                                <td data-label="Telefono">123456789</td>
-                                <td data-label="Email">ejemplo@dominio.com</td>
-                                <td data-label="Empleados">2</td>
-                                <td data-label="Animales">13/40</td>
-                                <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
                             </tr>
                             <tr>
                                 <td scope="row" data-label="ID">####</td>
-                                <td data-label="Nombre">Refugio 4</td>
+                                <td data-label="Nombre">perr1</td>
+                                <td data-label="Tipo">Perro</td>
+                                <td data-label="Tamaño">Mediano</td>
+                                <td data-label="Raza">Sin Raza</td>
+                                <td data-label="Raza">Masculino</td>
                                 <td data-label="Ciudad">Rosario</td>
-                                <td data-label="Dirección">calle falsa 123</td>
-                                <td data-label="Telefono">123456789</td>
-                                <td data-label="Email">ejemplo@dominio.com</td>
-                                <td data-label="Empleados">2</td>
-                                <td data-label="Animales">13/40</td>
-                                <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
                             </tr>
                             <tr>
                                 <td scope="row" data-label="ID">####</td>
-                                <td data-label="Nombre">Refugio 4</td>
+                                <td data-label="Nombre">gat1</td>
+                                <td data-label="Tipo">Gato</td>
+                                <td data-label="Tamaño">Pequeño</td>
+                                <td data-label="Raza">Sin Raza</td>
+                                <td data-label="Raza">Femenino</td>
                                 <td data-label="Ciudad">Rosario</td>
-                                <td data-label="Dirección">calle falsa 123</td>
-                                <td data-label="Telefono">123456789</td>
-                                <td data-label="Email">ejemplo@dominio.com</td>
-                                <td data-label="Empleados">2</td>
-                                <td data-label="Animales">13/40</td>
-                                <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
                             </tr>
                             <tr>
                                 <td scope="row" data-label="ID">####</td>
-                                <td data-label="Nombre">Refugio 4</td>
+                                <td data-label="Nombre">perr1</td>
+                                <td data-label="Tipo">Perro</td>
+                                <td data-label="Tamaño">Mediano</td>
+                                <td data-label="Raza">Sin Raza</td>
+                                <td data-label="Raza">Masculino</td>
                                 <td data-label="Ciudad">Rosario</td>
-                                <td data-label="Dirección">calle falsa 123</td>
-                                <td data-label="Telefono">123456789</td>
-                                <td data-label="Email">ejemplo@dominio.com</td>
-                                <td data-label="Empleados">2</td>
-                                <td data-label="Animales">13/40</td>
-                                <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
                             </tr>
                             <tr>
                                 <td scope="row" data-label="ID">####</td>
-                                <td data-label="Nombre">Refugio 4</td>
+                                <td data-label="Nombre">gat1</td>
+                                <td data-label="Tipo">Gato</td>
+                                <td data-label="Tamaño">Pequeño</td>
+                                <td data-label="Raza">Sin Raza</td>
+                                <td data-label="Raza">Femenino</td>
                                 <td data-label="Ciudad">Rosario</td>
-                                <td data-label="Dirección">calle falsa 123</td>
-                                <td data-label="Telefono">123456789</td>
-                                <td data-label="Email">ejemplo@dominio.com</td>
-                                <td data-label="Empleados">2</td>
-                                <td data-label="Animales">13/40</td>
-                                <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
                             </tr>
                             <tr>
                                 <td scope="row" data-label="ID">####</td>
-                                <td data-label="Nombre">Refugio 4</td>
+                                <td data-label="Nombre">perr1</td>
+                                <td data-label="Tipo">Perro</td>
+                                <td data-label="Tamaño">Mediano</td>
+                                <td data-label="Raza">Sin Raza</td>
+                                <td data-label="Raza">Masculino</td>
                                 <td data-label="Ciudad">Rosario</td>
-                                <td data-label="Dirección">calle falsa 123</td>
-                                <td data-label="Telefono">123456789</td>
-                                <td data-label="Email">ejemplo@dominio.com</td>
-                                <td data-label="Empleados">2</td>
-                                <td data-label="Animales">13/40</td>
-                                <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
                             </tr>
                             <tr>
                                 <td scope="row" data-label="ID">####</td>
-                                <td data-label="Nombre">Refugio 4</td>
+                                <td data-label="Nombre">gat1</td>
+                                <td data-label="Tipo">Gato</td>
+                                <td data-label="Tamaño">Pequeño</td>
+                                <td data-label="Raza">Sin Raza</td>
+                                <td data-label="Raza">Femenino</td>
                                 <td data-label="Ciudad">Rosario</td>
-                                <td data-label="Dirección">calle falsa 123</td>
-                                <td data-label="Telefono">123456789</td>
-                                <td data-label="Email">ejemplo@dominio.com</td>
-                                <td data-label="Empleados">2</td>
-                                <td data-label="Animales">13/40</td>
-                                <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
                             </tr>
                             <tr>
                                 <td scope="row" data-label="ID">####</td>
-                                <td data-label="Nombre">Refugio 4</td>
+                                <td data-label="Nombre">perr1</td>
+                                <td data-label="Tipo">Perro</td>
+                                <td data-label="Tamaño">Mediano</td>
+                                <td data-label="Raza">Sin Raza</td>
+                                <td data-label="Raza">Masculino</td>
                                 <td data-label="Ciudad">Rosario</td>
-                                <td data-label="Dirección">calle falsa 123</td>
-                                <td data-label="Telefono">123456789</td>
-                                <td data-label="Email">ejemplo@dominio.com</td>
-                                <td data-label="Empleados">2</td>
-                                <td data-label="Animales">13/40</td>
-                                <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
                             </tr>
-
-
+                            <tr>
+                                <td scope="row" data-label="ID">####</td>
+                                <td data-label="Nombre">gat1</td>
+                                <td data-label="Tipo">Gato</td>
+                                <td data-label="Tamaño">Pequeño</td>
+                                <td data-label="Raza">Sin Raza</td>
+                                <td data-label="Raza">Femenino</td>
+                                <td data-label="Ciudad">Rosario</td>
+                            </tr>
+                            <tr>
+                                <td scope="row" data-label="ID">####</td>
+                                <td data-label="Nombre">perr1</td>
+                                <td data-label="Tipo">Perro</td>
+                                <td data-label="Tamaño">Mediano</td>
+                                <td data-label="Raza">Sin Raza</td>
+                                <td data-label="Raza">Masculino</td>
+                                <td data-label="Ciudad">Rosario</td>
+                            </tr>
+                            <tr>
+                                <td scope="row" data-label="ID">####</td>
+                                <td data-label="Nombre">gat1</td>
+                                <td data-label="Tipo">Gato</td>
+                                <td data-label="Tamaño">Pequeño</td>
+                                <td data-label="Raza">Sin Raza</td>
+                                <td data-label="Raza">Femenino</td>
+                                <td data-label="Ciudad">Rosario</td>
+                            </tr>
+                            <tr>
+                                <td scope="row" data-label="ID">####</td>
+                                <td data-label="Nombre">perr1</td>
+                                <td data-label="Tipo">Perro</td>
+                                <td data-label="Tamaño">Mediano</td>
+                                <td data-label="Raza">Sin Raza</td>
+                                <td data-label="Raza">Masculino</td>
+                                <td data-label="Ciudad">Rosario</td>
+                            </tr>
+                            <tr>
+                                <td scope="row" data-label="ID">####</td>
+                                <td data-label="Nombre">gat1</td>
+                                <td data-label="Tipo">Gato</td>
+                                <td data-label="Tamaño">Pequeño</td>
+                                <td data-label="Raza">Sin Raza</td>
+                                <td data-label="Raza">Femenino</td>
+                                <td data-label="Ciudad">Rosario</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>

@@ -849,12 +849,14 @@ body:not(.nohover) tbody tr:hover {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
+  gap: 12px;
 }
 
 @media (max-width: 767px) {
   #contenedorFiltros {
     margin-left: 25px;
     margin-right: 25px;
+    gap: 0px;
   }
 }
 .botonEnSelect {
@@ -871,7 +873,7 @@ body:not(.nohover) tbody tr:hover {
   padding-right: 20px;
 }
 
-#botonAddRefu {
+#botonAddRefu, #botonAddPerso, #botonAddMasco {
   background: var(--color6);
   margin-left: auto;
   margin-right: 25px;
@@ -883,7 +885,7 @@ body:not(.nohover) tbody tr:hover {
     margin-bottom: 10px;
   }
 
-  #botonAddRefu {
+  #botonAddRefu, #botonAddPerso, #botonAddMasco {
     margin-right: 0px;
   }
 }
@@ -893,7 +895,7 @@ body:not(.nohover) tbody tr:hover {
     margin-bottom: 10px;
   }
 
-  #botonAddRefu {
+  #botonAddRefu, #botonAddPerso, #botonAddMasco {
     margin-right: 0px;
   }
 }
