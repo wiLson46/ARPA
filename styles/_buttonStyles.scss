@@ -1,0 +1,159 @@
+.uploadWrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    label {
+        font-family: "Oswald", sans-serif;
+        font-size: 24px;
+    }
+
+    .file-upload {
+
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        position: relative;
+        box-sizing: border-box;
+        cursor: pointer;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border: 3px solid var(--color3);
+        overflow: hidden;
+        background-image: linear-gradient(to bottom, var(--color3) 50%, var(--colorW) 50%);
+        background-size: 100% 200%;
+        transition: all 1s;
+        color: var(--colorW);
+        font-size: 30px;
+
+        input[type='file'] {
+
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            cursor: pointer;
+
+
+        }
+
+        &:hover {
+
+            background-position: 0 -100%;
+            color: var(--color3);
+
+        }
+    }
+}
+
+.butLog {
+    min-width: 300px;
+    height: 50px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    position: relative;
+    margin-top: 50px;
+    box-sizing: border-box;
+    cursor: pointer;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 3px solid var(--color3);
+    overflow: hidden;
+    background-image: linear-gradient(to bottom, var(--color3) 50%, var(--colorW) 50%);
+    background-size: 100% 200%;
+    transition: all 1s;
+    color: var(--colorW);
+
+    &:hover {
+
+        background-position: 0 -100%;
+        color: var(--color3);
+
+    }
+
+}
+
+.butLogINV {
+    border: 3px solid var(--color3);
+    background-image: linear-gradient(to bottom, var(--colorW) 50%, var(--color3) 50%);
+    color: var(--color3);
+
+    &:hover {
+
+        color: var(--colorW);
+
+    }
+}
+
+.butLogSelect {
+    min-width: 115px;
+    height: 40px;
+    margin-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#botonEditUser {
+    border: 3px solid var(--color7);
+    background-image: linear-gradient(to bottom, var(--color7) 50%, var(--colorW) 50%);
+    color: var(--colorB);
+    margin-left: auto;
+    margin-right: 25px;
+}
+
+#botonAddRefu,
+#botonAddPerso,
+#botonAddMasco {
+    border: 3px solid var(--color6);
+    background-image: linear-gradient(to bottom, var(--color6) 50%, var(--colorW) 50%);
+    color: var(--colorW);
+    margin-left: auto;
+    margin-right: 25px;
+
+    &:hover {
+
+        color: var(--color6);
+
+    }
+}
+
+@media (min-width: 421px) and (max-width: 1024px) {
+    .botonEnSelect {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #botonAddRefu,
+    #botonAddPerso,
+    #botonAddMasco,
+    #botonEditUser {
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 420px) {
+    .botonEnSelect {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #botonAddRefu,
+    #botonAddPerso,
+    #botonAddMasco,
+    #botonEditUser {
+        margin-right: 0px;
+    }
+}
