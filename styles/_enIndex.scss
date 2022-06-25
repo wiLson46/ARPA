@@ -235,6 +235,26 @@
   }
 }
 
+.spacer2 {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 1025px) {
+  .spacer2 {
+    margin-bottom: 10px;
+    width: 500px;
+  }
+}
+
+@media (max-width: 767px) {
+  .spacer2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
 /*
 input[type="date"]::-webkit-inner-spin-button,
 input[type="date"]::-webkit-calendar-picker-indicator {
@@ -546,10 +566,11 @@ body {
 }
 
 .mainviewAjustes {
-  margin-left: 50px;
-  margin-right: 50px;
   height: 600px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
   //max-width: calc(100vw - 400px);
 
   .ajustesCol1 {
@@ -559,33 +580,34 @@ body {
     flex-direction: column;
     box-sizing: border-box;
     padding: 10px;
-  
+
     .imgAjustesConte {
       width: 320px;
       display: flex;
       justify-content: center;
     }
-  
+
     .imagenAvatarAjustes {
       border-radius: 50px;
       width: 300px;
       background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(194, 202, 239, 1) 25%, rgba(71, 98, 230, 1) 100%);
     }
   }
-  
+
   .ajustesCol2 {
     //border: 1px solid red;
     //width: 690px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
+    align-content: center;
     padding: 10px;
     box-sizing: border-box;
     flex: 1;
 
   }
-  
+
   .ajustesCol3 {
     //border: 1px solid red;
     padding: 10px;
@@ -596,8 +618,6 @@ body {
 
 @media (max-width: 767px) {
   .mainviewAjustes {
-    margin-left: 25px;
-    margin-right: 25px;
     overflow-y: auto;
   }
 }
@@ -608,3 +628,9 @@ body {
   }
 }
 
+@media (min-width: 1024px) {
+  .mainviewAjustes {
+    margin-left: 50px;
+    margin-right: 50px;
+  } 
+}

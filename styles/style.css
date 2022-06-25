@@ -218,6 +218,24 @@
     margin-bottom: 10px;
   }
 }
+.spacer2 {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 1025px) {
+  .spacer2 {
+    margin-bottom: 10px;
+    width: 500px;
+  }
+}
+@media (max-width: 767px) {
+  .spacer2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
 /*
 input[type="date"]::-webkit-inner-spin-button,
 input[type="date"]::-webkit-calendar-picker-indicator {
@@ -518,10 +536,10 @@ body {
 }
 
 .mainviewAjustes {
-  margin-left: 50px;
-  margin-right: 50px;
   height: 600px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .mainviewAjustes .ajustesCol1 {
   width: 340px;
@@ -544,7 +562,8 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
+  align-content: center;
   padding: 10px;
   box-sizing: border-box;
   flex: 1;
@@ -557,14 +576,18 @@ body {
 
 @media (max-width: 767px) {
   .mainviewAjustes {
-    margin-left: 25px;
-    margin-right: 25px;
     overflow-y: auto;
   }
 }
 @media (min-width: 1024px) and (max-width: 1367px) {
   .mainviewAjustes {
     height: 445px;
+  }
+}
+@media (min-width: 1024px) {
+  .mainviewAjustes {
+    margin-left: 50px;
+    margin-right: 50px;
   }
 }
 .togglerPosition {

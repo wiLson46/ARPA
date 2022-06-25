@@ -44,7 +44,7 @@
             </a>
             <a class="linkNoStyle" href="analisis.html">
                 <div class="menuItem">
-                        <i class="fa-solid fa-chart-column"></i>
+                    <i class="fa-solid fa-chart-column"></i>
 
                     <p class="menuText">Analisis</p>
                 </div>
@@ -88,9 +88,9 @@
                     <p class="menuText biggerText">Depositos</p>
                 </div>
             </a>
-<a class="linkNoStyle" href="analisis.html">
+            <a class="linkNoStyle" href="analisis.html">
                 <div class="menuItem itemOnMobile">
-                      <i class="fa-solid fa-chart-column"></i>
+                    <i class="fa-solid fa-chart-column"></i>
                     <p class="menuText biggerText">Analisis</p>
                 </div>
             </a>
@@ -117,69 +117,108 @@
                 <img class="userPic bps" src="images/avatar3.png" alt="profile image">
             </div>
             <div class="realContent">
+
+                <div class="togglerFilteringPosition">
+                    <div id="toggleF">
+                        <i class="fa-solid fa-gear gearToggle"></i>
+                    </div>
+                </div>
+
                 <p class="indicadorPagina">Depositos</p>
 
-                <div>
-                    <div>parte izquierda</div>
-                    <div class="contenedorTabla">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th scope="col">Hora</th>
-                                    <th scope="col">Cambio</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td scope="row" data-label="Hora">15:43hs</td>
-                                    <td data-label="Cambio">actualizada mascota ID</td>
-                                </tr>
-                                <tr>
-                                    <td scope="row" data-label="Hora">15:43hs</td>
-                                    <td data-label="Cambio">actualizada mascota ID</td>
-                                </tr>
-                                <tr>
-                                    <td scope="row" data-label="Hora">15:43hs</td>
-                                    <td data-label="Cambio">actualizada mascota ID</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                <div id="contenedorFiltros" class="closedFiltering">
+
+                    <div class="miniContainer">
+                        <label for="filterName">Nombre de Refugio</label>
+                        <input type="text" id="filterName" name="filterName"
+                            placeholder="Ingrese un Nombre para buscar">
                     </div>
 
-                </div>
-                <div>
-                    <div>parte izquierda</div>
-                    <div class="contenedorTabla">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th scope="col">Hora</th>
-                                    <th scope="col">Cambio</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td scope="row" data-label="Hora">15:43hs</td>
-                                    <td data-label="Cambio">actualizada mascota ID</td>
-                                </tr>
-                                <tr>
-                                    <td scope="row" data-label="Hora">15:43hs</td>
-                                    <td data-label="Cambio">actualizada mascota ID</td>
-                                </tr>
-                                <tr>
-                                    <td scope="row" data-label="Hora">15:43hs</td>
-                                    <td data-label="Cambio">actualizada mascota ID</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="miniContainer">
+                        <label for="filterName">Item</label>
+                        <input type="text" id="filterName" name="filterName"
+                            placeholder="Ingrese un Item para buscar">
                     </div>
+
+                    <div class="miniContainer">
+                        <label for="filterCity">Ciudad</label>
+                        <select id="filterCity" class="dropdown">
+                            <option>All</option>
+                            <option>Rosario</option>
+                        </select>
+                    </div>
+
+                    <button id="botonFiltrarRefu" class="butLog butLogSelect">Filtrar</button>
+
+                </div>
+
+                <div id="tabConteRefu" class="contenedorTabla">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">Item</th>
+                                <th scope="col">Refugio</th>
+                                <th scope="col">Ciudad</th>
+                                <th scope="col">Cantidad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row" data-label="Item">Alimento</td>
+                                <td  data-label="Refugio">Refugio 4</td>
+                                <td data-label="Ciudad">Rosario</td>
+                                <td data-label="Telefono">123456789</td>
+                            </tr>
+                            <tr>
+                                <td scope="row" data-label="Item">Alimento</td>
+                                <td  data-label="Refugio">Refugio 4</td>
+                                <td data-label="Ciudad">Rosario</td>
+                                <td data-label="Telefono">123456789</td>
+                            </tr>
+                            <tr>
+                                <td scope="row" data-label="Item">Alimento</td>
+                                <td  data-label="Refugio">Refugio 4</td>
+                                <td data-label="Ciudad">Rosario</td>
+                                <td data-label="Telefono">123456789</td>
+                            </tr>
+                            <tr>
+                                <td scope="row" data-label="Item">Alimento</td>
+                                <td  data-label="Refugio">Refugio 4</td>
+                                <td data-label="Ciudad">Rosario</td>
+                                <td data-label="Telefono">123456789</td>
+                            </tr>
+                            <tr>
+                                <td scope="row" data-label="Item">Alimento</td>
+                                <td  data-label="Refugio">Refugio 4</td>
+                                <td data-label="Ciudad">Rosario</td>
+                                <td data-label="Telefono">123456789</td>
+                            </tr>
+                            <tr>
+                                <td scope="row" data-label="Item">Alimento</td>
+                                <td  data-label="Refugio">Refugio 4</td>
+                                <td data-label="Ciudad">Rosario</td>
+                                <td data-label="Telefono">123456789</td>
+                            </tr>
+                            <tr>
+                                <td scope="row" data-label="Item">Alimento</td>
+                                <td  data-label="Refugio">Refugio 4</td>
+                                <td data-label="Ciudad">Rosario</td>
+                                <td data-label="Telefono">123456789</td>
+                            </tr>
+                            <tr>
+                                <td scope="row" data-label="Item">Alimento</td>
+                                <td  data-label="Refugio">Refugio 4</td>
+                                <td data-label="Ciudad">Rosario</td>
+                                <td data-label="Telefono">123456789</td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
                 </div>
 
             </div>
         </div>
-
-
-
     </div>
 
     <div id="toastOK">Cambio realizado con exito</div>
