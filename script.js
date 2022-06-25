@@ -16,13 +16,13 @@ toggler.onclick = function () {
 function myFunction() {
     var x = document.getElementById("toastOK");
     x.className = "show";
-    setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+    setTimeout(function () { x.className = x.className.replace("show", ""); }, 5500);
 }
 
 function myFunction2() {
     var x = document.getElementById("toastNOT");
     x.className = "show";
-    setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+    setTimeout(function () { x.className = x.className.replace("show", ""); }, 5500);
 }
 
 

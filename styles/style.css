@@ -350,8 +350,8 @@ body {
 
 @media (min-width: 1024px) and (max-width: 1367px) {
   .menuItem {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 }
 .itemOnMobile {
@@ -616,7 +616,7 @@ body {
 }
 
 #browseMobile {
-  padding-top: 50px;
+  padding-top: 10px;
   padding-left: 40px;
   position: fixed;
   margin-top: 100px;
@@ -904,12 +904,13 @@ body:not(.nohover) tbody tr:hover {
   top: 100px;
   font-size: 24px;
   font-family: "Oswald", sans-serif;
+  z-index: 2;
 }
 
 #toastOK.show {
   visibility: visible;
-  -webkit-animation: fadein 1.5s, fadeout 1.5s 2s;
-  animation: fadein 1.5s, fadeout 1.5s 2s;
+  -webkit-animation: fadein 1.5s, fadeout 1.5s 4s;
+  animation: fadein 1.5s, fadeout 1.5s 4s;
   border-radius: 0px 0px 0px 25px;
 }
 
@@ -925,12 +926,13 @@ body:not(.nohover) tbody tr:hover {
   top: 100px;
   font-size: 24px;
   font-family: "Oswald", sans-serif;
+  z-index: 2;
 }
 
 #toastNOT.show {
   visibility: visible;
-  -webkit-animation: fadein 1.5s, fadeout 1.5s 2s;
-  animation: fadein 1.5s, fadeout 1.5s 2s;
+  -webkit-animation: fadein 1.5s, fadeout 1.5s 3s;
+  animation: fadein 1.5s, fadeout 1.5s 3s;
   border-radius: 0px 0px 0px 25px;
 }
 
