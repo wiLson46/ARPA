@@ -1,4 +1,4 @@
-console.log("script loaded");
+console.log("script loaded OK");
 
 const barra = document.getElementById('browseMobile')
 const toggler = document.getElementById('toggle');
@@ -42,6 +42,33 @@ togglerFiltering.onclick = function () {
         togglerFiltering.className = "giraRuedaAt";
        // changeTableHeight.style.height = "845px";
     }
+}
+
+function login() {
+    resp = fetch('http://arpaweb.ddns.net:8080/login', {
+        method: 'POST',
+        body: JSON.stringify({
+            "password": document.getElementById("inputPass").value,
+            "email": document.getElementById("inputEmail").value
+        }),
+        headers: {
+            "Content-type": "application/json"
+        }
+    }).then(response => response)
+            .then(resp => {
+                if (resp.status === 200) {
+                    const respj = resp.json()
+                            .then(data => {
+                                sessionStorage.setItem("accessToken", data.accessToken);
+                                sessionStorage.setItem("email", data.email);
+                                window.location.href = 'logged.html';
+                            });
+                } else {
+                    resp.json().then(resp => console.log(resp.mensaje));
+                    myFunction2();
+                }
+            });
+
 }
 
 /*
