@@ -142,7 +142,7 @@
                     </div>
 
                     <button id="botonFiltrarMasco" class="butLog butLogSelect" onclick="myFunction()">Filtrar</button>
-                    <button id="botonAddMasco" class="butLog butLogSelect" onclick="myFunction2()">Agregar
+                    <button id="botonAddMasco" class="butLog butLogSelect" onclick="DialogAddPersona.showModal()">Agregar
                         Persona</button>
 
                 </div>
@@ -322,6 +322,38 @@
             </div>
         </div>
     </div>
+
+    <dialog id="DialogAddPersona" class="modal">
+        <form method="dialog">
+            <header>
+                <div class="modalTitle">Agregar Mascota</div>
+            </header>
+            <section>
+                    <input id="inputPersonaName" type="text" class="inputField spacer1" placeholder="Nombre">
+                    <input id="inputPersonaEmail" type="email" class="inputField spacer1" placeholder="email">
+                    <input id="inputPersonaDNI" type="number" class="inputField spacer1" placeholder="DNI">
+                    <input id="inputPersonaPhone" type="number" class="inputField spacer1" placeholder="Telefono">
+                    <input id="inputPersonaAddress" type="text" class="inputField spacer1" placeholder="Dirección">
+                    <div class="miniContainer">
+                        <label for="filterTypeMasco">Ciudad</label>
+                        <select id="filterTypeMasco" class="dropdown">
+                            <option>Select</option>
+                            <option>Masculino</option>
+                            <option>Femenino</option>
+                        </select>
+                    </div>
+            </section>
+            <footer>
+                <menu>
+
+                        <a class="butLog spacer1"
+                            onclick="myFunction(), this.closest('dialog').close('cancel')">Registrarse</a>
+                        <a class="butLog butLogINV spacer1" autofocus type="reset"
+                            onclick="this.closest('dialog').close('cancel')">Cancelar</a>
+                </menu>
+            </footer>
+        </form>
+    </dialog>
 
     <div id="toastOK">Cambio realizado con exito</div>
     <div id="toastNOT">Se produjo un error</div>

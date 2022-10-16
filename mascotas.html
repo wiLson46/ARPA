@@ -181,7 +181,7 @@
 
                     <button id="botonFiltrarMasco" class="butLog butLogSelect" onclick="myFunction()">Filtrar</button>
 
-                    <button id="botonAddMasco" class="butLog butLogSelect" onclick="myFunction2()">Agregar
+                    <button id="botonAddMasco" class="butLog butLogSelect" onclick="DialogAddMascota.showModal()">Agregar
                         Mascota</button>
 
                 </div>
@@ -423,6 +423,66 @@
             </div>
         </div>
     </div>
+
+    <dialog id="DialogAddMascota" class="modal">
+        <form method="dialog">
+            <header>
+                <div class="modalTitle">Agregar Mascota</div>
+            </header>
+            <section>
+                    <input id="inputAnimalName" type="text" class="inputField spacer1" placeholder="Nombre">
+                    <input id="inputAnimalAge" type="number" class="inputField spacer1" placeholder="Edad">
+                    <div class="miniContainer">
+                        <label for="filterTypeMasco">Tipo</label>
+                        <select id="filterTypeMasco" class="dropdown">
+                            <option>Select</option>
+                            <option>Gato</option>
+                            <option>Perro</option>
+                        </select>
+                    </div>
+                    <div class="miniContainer">
+                        <label for="filterTypeMasco">Tamaño</label>
+                        <select id="filterTypeMasco" class="dropdown">
+                            <option>Select</option>
+                            <option>Pequeño</option>
+                            <option>Mediano</option>
+                            <option>Grande</option>
+                        </select>
+                    </div>
+                    <div class="miniContainer">
+                        <label for="filterTypeMasco">Raza</label>
+                        <select id="filterTypeMasco" class="dropdown">
+                            <option>Select</option>
+                        </select>
+                    </div>
+                    <div class="miniContainer">
+                        <label for="filterTypeMasco">Genero</label>
+                        <select id="filterTypeMasco" class="dropdown">
+                            <option>Select</option>
+                            <option>Masculino</option>
+                            <option>Femenino</option>
+                        </select>
+                    </div>
+                    <div class="miniContainer">
+                        <label for="filterTypeMasco">Ciudad</label>
+                        <select id="filterTypeMasco" class="dropdown">
+                            <option>Select</option>
+                            <option>Masculino</option>
+                            <option>Femenino</option>
+                        </select>
+                    </div>
+            </section>
+            <footer>
+                <menu>
+
+                        <a class="butLog spacer1"
+                            onclick="myFunction(), this.closest('dialog').close('cancel')">Registrarse</a>
+                        <a class="butLog butLogINV spacer1" autofocus type="reset"
+                            onclick="this.closest('dialog').close('cancel')">Cancelar</a>
+                </menu>
+            </footer>
+        </form>
+    </dialog>
 
     <div id="toastOK">Cambio realizado con exito</div>
     <div id="toastNOT">Se produjo un error</div>

@@ -4,6 +4,7 @@
 @use "selectores";
 @use "toasts";
 @use "buttonStyles";
+@use "modales";
 
 html {
   background: var(--color3);
@@ -73,3 +74,4 @@ html[data-theme="sol"] {
 .linkNoStyle {
   text-decoration: none;
 }
+
