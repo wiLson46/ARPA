@@ -22,12 +22,66 @@ table td {
   text-overflow: ellipsis;
 }
 
+@media (max-width: 420px) {
+
+  table th,
+  table td {
+    border: 0;
+  }
+}
+
 table th {
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
   background-color: var(--color3);
   color: var(--colorW);
+}
+
+@media (max-width: 821px) {
+  table {
+    border: 0;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    border-bottom: 1px solid var(--color4);
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  table td {
+    border-bottom: 1px solid var(--color4);
+    display: block;
+    font-size: 16px;
+    text-align: right;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table td:first-child {
+    background-color: var(--color3);
+    color: var(--colorW);
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
 }
 
 body:not(.nohover) tbody tr:hover {
@@ -40,4 +94,18 @@ body:not(.nohover) tbody tr:hover {
   margin-right: 50px;
   overflow-y: scroll;
   height: 550px;
+}
+
+@media (max-width: 767px) {
+  .contenedorTabla {
+    margin-left: 25px;
+    margin-right: 25px;
+    overflow-y: auto;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1367px) {
+  .contenedorTabla {
+    height: 445px;
+  }
 }

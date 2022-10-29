@@ -102,3 +102,11 @@
   align-items: flex-end;
   gap: 12px;
 }
+
+@media (max-width: 767px) {
+  #contenedorFiltros {
+    margin-left: 25px;
+    margin-right: 25px;
+    gap: 0px;
+  }
+}

@@ -116,3 +116,33 @@
     }
 
 }
+
+@media (min-width: 421px) and (max-width: 1024px) {
+    .botonEnSelect {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #botonAddRefu,
+    #botonAddPerso,
+    #botonAddMasco,
+    #botonEditUser {
+        margin-right: 0px;
+    }
+
+}
+
+@media (max-width: 420px) {
+    .botonEnSelect {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #botonAddRefu,
+    #botonAddPerso,
+    #botonAddMasco,
+    #botonEditUser {
+        margin-right: 0px;
+    }
+    
+}

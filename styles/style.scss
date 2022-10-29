@@ -5,8 +5,6 @@
 @use "toasts";
 @use "buttonStyles";
 @use "modales";
-@use "mqs";
-
 
 html {
   background: var(--color3);
@@ -21,6 +19,8 @@ html {
   --color6: #007900;
   --color7: #d4d400;
 
+
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,6 +34,12 @@ html {
 html[data-theme="sol"] {
   background: var(--colorW);
 
+}
+
+@media (max-width: 420px) {
+  html {
+    background: var(--colorW);
+  }
 }
 
 .byus {
@@ -57,6 +63,15 @@ html[data-theme="sol"] {
   box-shadow: 0px 10px 15px 1px rgba(0, 0, 0, 0.15);
 }
 
+@media (max-width: 767px) {
+  .bps {
+    -webkit-box-shadow: 0px 10px 15px 1px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 10px 15px 1px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 15px 1px rgba(0, 0, 0, 0);
+  }
+}
+
 .linkNoStyle {
   text-decoration: none;
 }
+
