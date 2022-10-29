@@ -151,7 +151,7 @@
 
                     <button id="botonFiltrarRefu" class="butLog butLogSelect">Filtrar</button>
 
-                    <button id="botonAddRefu" class="butLog butLogSelect">Agregar Refugio</button>
+                    <button id="botonAddRefu" class="butLog butLogSelect" onclick="DialogAddRefugio.showModal()">Agregar Refugio</button>
 
                 </div>
 
@@ -381,7 +381,6 @@
                                 <td data-label="Detalles"><a href="#" class="linkNoStyle">Ver detalles</a></td>
                             </tr>
 
-
                         </tbody>
                     </table>
                 </div>
@@ -389,6 +388,64 @@
             </div>
         </div>
     </div>
+
+    <dialog id="DialogAddRefugio" class="modal">
+        <form method="dialog">
+            <header>
+                <div class="modalTitle">Agregar Refugio</div>
+            </header>
+            <section class="modalSeccionContainer">
+
+                <div class="miniContainer">
+                    <label for="inputAnimalName">Nombre</label>
+                    <input type="text" id="inputAnimalName" name="refugioName"
+                        placeholder="Ingrese un nombre para el refugio">
+                </div>
+
+                <div class="miniContainer">
+                    <label for="filterTypeMasco">Ciudad</label>
+                    <select id="filterTypeMasco" class="dropdown">
+                        <option>Select</option>
+                        <option>Gato</option>
+                        <option>Perro</option>
+                    </select>
+                </div>
+
+                <div class="miniContainer">
+                    <label for="inputAnimalName">Dirección</label>
+                    <input type="text" id="inputAnimalName" name="refugioDir"
+                        placeholder="Ingrese una dirección para el refugio">
+                </div>
+
+                <div class="miniContainer">
+                    <label for="inputAnimalName">Telefono</label>
+                    <input type="text" id="inputAnimalName" name="refugioTel"
+                        placeholder="Ingrese un telefono para el refugio">
+                </div>
+
+                <div class="miniContainer">
+                    <label for="inputAnimalName">Email</label>
+                    <input type="email" id="inputAnimalName" name="personaEmail"
+                        placeholder="Ingrese un email para el refugio">
+                </div>
+
+                <div class="miniContainer">
+                    <label for="inputAnimalName">Capacidad de animales</label>
+                    <input type="email" id="inputAnimalName" name="refugioCapacidad"
+                        placeholder="Ingrese la capacidad de animales del refugio">
+                </div>
+
+            </section>
+            <footer>
+                <menu class="modalFooter">
+                    <a class="butLog spacer1" onclick="myFunction(), this.closest('dialog').close('cancel')">Agregar
+                        Mascota</a>
+                    <a class="butLog butLogINV spacer1" autofocus type="reset"
+                        onclick="this.closest('dialog').close('cancel')">Cancelar</a>
+                </menu>
+            </footer>
+        </form>
+    </dialog>
 
     <div id="toastOK">Cambio realizado con exito</div>
     <div id="toastNOT">Se produjo un error</div>

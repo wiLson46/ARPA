@@ -1054,19 +1054,19 @@ body:not(.nohover) tbody tr:hover {
   align-items: center;
   border: 3px solid var(--color3);
   overflow: hidden;
-  background-image: linear-gradient(to bottom, var(--color3) 50%, var(--colorW) 50%);
+  background-image: linear-gradient(to bottom, var(--color3) 50%, var(--color8) 50%);
   background-size: 100% 200%;
   transition: all 1s;
   color: var(--colorW);
 }
 .butLog:hover {
   background-position: 0 -100%;
-  color: var(--color3);
+  color: var(--colorW);
 }
 
 .butLogINV {
   border: 3px solid var(--color3);
-  background-image: linear-gradient(to bottom, var(--colorW) 50%, var(--color3) 50%);
+  background-image: linear-gradient(to bottom, var(--colorW) 50%, var(--color8) 50%);
   color: var(--color3);
 }
 .butLogINV:hover {
@@ -1151,6 +1151,32 @@ dialog::backdrop {
   font-size: 24px;
 }
 
+.modalSeccionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+.modalSeccionContainer .miniContainer {
+  margin-bottom: 5px;
+}
+.modalSeccionContainer .miniContainer .dropdown {
+  width: 360px;
+  margin: 0;
+}
+.modalSeccionContainer .miniContainer input {
+  width: 360px;
+  margin: 0;
+}
+
+.modalFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
 html {
   background: var(--color3);
   --colorW: #FFFFFF;
@@ -1162,6 +1188,7 @@ html {
   --color5: rgb(230, 230, 255);
   --color6: #007900;
   --color7: #d4d400;
+  --color8: #102cb8;
   display: flex;
   align-items: center;
   justify-content: center;

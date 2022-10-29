@@ -429,10 +429,19 @@
             <header>
                 <div class="modalTitle">Agregar Mascota</div>
             </header>
-            <section>
-                    <input id="inputAnimalName" type="text" class="inputField spacer1" placeholder="Nombre">
-                    <input id="inputAnimalAge" type="number" class="inputField spacer1" placeholder="Edad">
-                    <div class="miniContainer">
+            <section class="modalSeccionContainer">
+                <div class="miniContainer">
+                    <label for="inputAnimalName">Nombre</label>
+                    <input type="text" id="inputAnimalName" name="mascotaName"
+                        placeholder="Ingrese un nombre para la mascota">
+                </div>
+                <div class="miniContainer">
+                    <label for="inputAnimalAge">Nombre</label>
+                    <input type="number" id="inputAnimalAge" name="mascotaAge"
+                        placeholder="Ingrese una edad para la mascota">
+                </div>
+
+                <div class="miniContainer">
                         <label for="filterTypeMasco">Tipo</label>
                         <select id="filterTypeMasco" class="dropdown">
                             <option>Select</option>
@@ -473,10 +482,9 @@
                     </div>
             </section>
             <footer>
-                <menu>
-
+                <menu class="modalFooter">
                         <a class="butLog spacer1"
-                            onclick="myFunction(), this.closest('dialog').close('cancel')">Registrarse</a>
+                            onclick="myFunction(), this.closest('dialog').close('cancel')">Agregar Mascota</a>
                         <a class="butLog butLogINV spacer1" autofocus type="reset"
                             onclick="this.closest('dialog').close('cancel')">Cancelar</a>
                 </menu>

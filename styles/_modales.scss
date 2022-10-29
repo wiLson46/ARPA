@@ -13,3 +13,32 @@ dialog::backdrop {
   font-family: 'Oswald', sans-serif;
   font-size: 24px;
 }
+
+.modalSeccionContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+
+  .miniContainer{
+    margin-bottom: 5px;
+
+    .dropdown{
+      width: 360px;
+      margin: 0;
+    }
+
+    input{
+      width: 360px;
+      margin: 0;
+    }
+  }
+}
+
+.modalFooter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}

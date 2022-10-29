@@ -63,21 +63,21 @@
     align-items: center;
     border: 3px solid var(--color3);
     overflow: hidden;
-    background-image: linear-gradient(to bottom, var(--color3) 50%, var(--colorW) 50%);
+    background-image: linear-gradient(to bottom, var(--color3) 50%, var(--color8) 50%);
     background-size: 100% 200%;
     transition: all 1s;
     color: var(--colorW);
 
     &:hover {
         background-position: 0 -100%;
-        color: var(--color3);
+        color: var(--colorW);
     }
 
 }
 
 .butLogINV {
     border: 3px solid var(--color3);
-    background-image: linear-gradient(to bottom, var(--colorW) 50%, var(--color3) 50%);
+    background-image: linear-gradient(to bottom, var(--colorW) 50%, var(--color8) 50%);
     color: var(--color3);
 
     &:hover {

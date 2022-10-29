@@ -142,7 +142,8 @@
                     </div>
 
                     <button id="botonFiltrarMasco" class="butLog butLogSelect" onclick="myFunction()">Filtrar</button>
-                    <button id="botonAddMasco" class="butLog butLogSelect" onclick="DialogAddPersona.showModal()">Agregar
+                    <button id="botonAddMasco" class="butLog butLogSelect"
+                        onclick="DialogAddPersona.showModal()">Agregar
                         Persona</button>
 
                 </div>
@@ -326,30 +327,50 @@
     <dialog id="DialogAddPersona" class="modal">
         <form method="dialog">
             <header>
-                <div class="modalTitle">Agregar Mascota</div>
+                <div class="modalTitle">Agregar Persona</div>
             </header>
-            <section>
-                    <input id="inputPersonaName" type="text" class="inputField spacer1" placeholder="Nombre">
-                    <input id="inputPersonaEmail" type="email" class="inputField spacer1" placeholder="email">
-                    <input id="inputPersonaDNI" type="number" class="inputField spacer1" placeholder="DNI">
-                    <input id="inputPersonaPhone" type="number" class="inputField spacer1" placeholder="Telefono">
-                    <input id="inputPersonaAddress" type="text" class="inputField spacer1" placeholder="Dirección">
-                    <div class="miniContainer">
-                        <label for="filterTypeMasco">Ciudad</label>
-                        <select id="filterTypeMasco" class="dropdown">
-                            <option>Select</option>
-                            <option>Masculino</option>
-                            <option>Femenino</option>
-                        </select>
-                    </div>
+            <section class="modalSeccionContainer">
+
+                <div class="miniContainer">
+                    <label for="inputAnimalName">Nombre</label>
+                    <input type="text" id="inputAnimalName" name="personaName"
+                        placeholder="Ingrese un nombre para la mascota">
+                </div>
+
+                <div class="miniContainer">
+                    <label for="filterTypeMasco">Ciudad</label>
+                    <select id="filterTypeMasco" class="dropdown">
+                        <option>Select</option>
+                        <option>Gato</option>
+                        <option>Perro</option>
+                    </select>
+                </div>
+
+                <div class="miniContainer">
+                    <label for="inputAnimalName">Dirección</label>
+                    <input type="text" id="inputAnimalName" name="personaDir"
+                        placeholder="Ingrese una Dirección para la persona">
+                </div>
+
+                <div class="miniContainer">
+                    <label for="inputAnimalName">Telefono</label>
+                    <input type="text" id="inputAnimalName" name="personaTel"
+                        placeholder="Ingrese un telefono para la persona">
+                </div>
+
+                <div class="miniContainer">
+                    <label for="inputAnimalName">Email</label>
+                    <input type="email" id="inputAnimalName" name="personaEmail"
+                        placeholder="Ingrese un email para la persona">
+                </div>
+
             </section>
             <footer>
-                <menu>
-
-                        <a class="butLog spacer1"
-                            onclick="myFunction(), this.closest('dialog').close('cancel')">Registrarse</a>
-                        <a class="butLog butLogINV spacer1" autofocus type="reset"
-                            onclick="this.closest('dialog').close('cancel')">Cancelar</a>
+                <menu class="modalFooter">
+                    <a class="butLog spacer1" onclick="myFunction(), this.closest('dialog').close('cancel')">Agregar
+                        Mascota</a>
+                    <a class="butLog butLogINV spacer1" autofocus type="reset"
+                        onclick="this.closest('dialog').close('cancel')">Cancelar</a>
                 </menu>
             </footer>
         </form>
