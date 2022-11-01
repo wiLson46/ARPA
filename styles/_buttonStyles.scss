@@ -5,9 +5,10 @@
     margin-top: 25px;
     margin-bottom: 25px;
 
-    label {
+    .labelCargar {
         font-family: "Oswald", sans-serif;
         font-size: 24px;
+        margin-right: 15px;
     }
 
     .file-upload {
@@ -94,21 +95,22 @@
     padding-right: 20px;
 }
 
-#botonEditUser {
+#botonEditUser,
+#botonBorrarMascota,
+#botonBorrarPersona {
     border: 3px solid var(--color7);
     background-image: linear-gradient(to bottom, var(--color7) 50%, var(--colorW) 50%);
     color: var(--colorB);
-    margin-left: auto;
     margin-right: 25px;
 }
 
 #botonAddRefu,
 #botonAddPerso,
-#botonAddMasco {
+#botonAddMasco,
+#botonAddAdoptante {
     border: 3px solid var(--color6);
     background-image: linear-gradient(to bottom, var(--color6) 50%, var(--colorW) 50%);
     color: var(--colorW);
-    margin-left: auto;
     margin-right: 25px;
 
     &:hover {
@@ -126,7 +128,9 @@
     #botonAddRefu,
     #botonAddPerso,
     #botonAddMasco,
-    #botonEditUser {
+    #botonEditUser,
+    #botonAddAdoptante {
+        margin-left: auto;
         margin-right: 0px;
     }
 
@@ -141,7 +145,9 @@
     #botonAddRefu,
     #botonAddPerso,
     #botonAddMasco,
-    #botonEditUser {
+    #botonEditUser,
+    #botonAddAdoptante {
+        margin-left: auto;
         margin-right: 0px;
     }
     

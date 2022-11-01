@@ -457,6 +457,7 @@ body {
 
 @media (max-width: 767px) {
   .indicadorPagina {
+    width: 325px;
     font-size: 32px;
     margin: 25px;
   }
@@ -558,6 +559,10 @@ body {
   display: flex;
 }
 
+.botonesEnDetalle {
+  justify-content: end;
+}
+
 @media (max-width: 1023px) {
   .closedFiltering {
     display: none !important;
@@ -574,13 +579,11 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 
-  //max-width: calc(100vw - 400px);
-
   .ajustesCol1 {
-    //border: 1px solid red;
-    width: 340px;
+    width: 800px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     box-sizing: border-box;
     padding: 10px;
 
@@ -598,8 +601,6 @@ body {
   }
 
   .ajustesCol2 {
-    //border: 1px solid red;
-    //width: 690px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -612,7 +613,6 @@ body {
   }
 
   .ajustesCol3 {
-    //border: 1px solid red;
     padding: 10px;
     box-sizing: border-box;
     flex: 1;

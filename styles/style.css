@@ -428,6 +428,7 @@ body {
 
 @media (max-width: 767px) {
   .indicadorPagina {
+    width: 325px;
     font-size: 32px;
     margin: 25px;
   }
@@ -530,6 +531,10 @@ body {
   display: flex;
 }
 
+.botonesEnDetalle {
+  justify-content: end;
+}
+
 @media (max-width: 1023px) {
   .closedFiltering {
     display: none !important;
@@ -546,9 +551,10 @@ body {
   justify-content: center;
 }
 .mainviewAjustes .ajustesCol1 {
-  width: 340px;
+  width: 800px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   box-sizing: border-box;
   padding: 10px;
 }
@@ -716,6 +722,11 @@ table {
   width: 100%;
   table-layout: fixed;
   font-family: "Montserrat", sans-serif;
+}
+
+.dialogTable {
+  margin-top: 25px;
+  width: auto;
 }
 
 table tr {
@@ -1002,9 +1013,10 @@ body:not(.nohover) tbody tr:hover {
   margin-top: 25px;
   margin-bottom: 25px;
 }
-.uploadWrapper label {
+.uploadWrapper .labelCargar {
   font-family: "Oswald", sans-serif;
   font-size: 24px;
+  margin-right: 15px;
 }
 .uploadWrapper .file-upload {
   height: 50px;
@@ -1081,26 +1093,28 @@ body:not(.nohover) tbody tr:hover {
   padding-right: 20px;
 }
 
-#botonEditUser {
+#botonEditUser,
+#botonBorrarMascota,
+#botonBorrarPersona {
   border: 3px solid var(--color7);
   background-image: linear-gradient(to bottom, var(--color7) 50%, var(--colorW) 50%);
   color: var(--colorB);
-  margin-left: auto;
   margin-right: 25px;
 }
 
 #botonAddRefu,
 #botonAddPerso,
-#botonAddMasco {
+#botonAddMasco,
+#botonAddAdoptante {
   border: 3px solid var(--color6);
   background-image: linear-gradient(to bottom, var(--color6) 50%, var(--colorW) 50%);
   color: var(--colorW);
-  margin-left: auto;
   margin-right: 25px;
 }
 #botonAddRefu:hover,
 #botonAddPerso:hover,
-#botonAddMasco:hover {
+#botonAddMasco:hover,
+#botonAddAdoptante:hover {
   color: var(--color6);
 }
 
@@ -1112,7 +1126,9 @@ body:not(.nohover) tbody tr:hover {
   #botonAddRefu,
 #botonAddPerso,
 #botonAddMasco,
-#botonEditUser {
+#botonEditUser,
+#botonAddAdoptante {
+    margin-left: auto;
     margin-right: 0px;
   }
 }
@@ -1124,7 +1140,9 @@ body:not(.nohover) tbody tr:hover {
   #botonAddRefu,
 #botonAddPerso,
 #botonAddMasco,
-#botonEditUser {
+#botonEditUser,
+#botonAddAdoptante {
+    margin-left: auto;
     margin-right: 0px;
   }
 }
