@@ -97,7 +97,9 @@
 
 #botonEditUser,
 #botonBorrarMascota,
-#botonBorrarPersona {
+#botonBorrarPersona,
+#botonBorrarRefugio,
+#botonBorrarTransito {
     border: 3px solid var(--color7);
     background-image: linear-gradient(to bottom, var(--color7) 50%, var(--colorW) 50%);
     color: var(--colorB);

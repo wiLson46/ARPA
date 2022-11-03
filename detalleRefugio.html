@@ -116,7 +116,7 @@
                 <img class="userPic bps" src="images/avatar3.png" alt="profile image">
             </div>
             <div class="realContent">
-                <p class="indicadorPagina">Detalles de <span id="nombreDetalle">NOMBRE DE PERSONA</span></p>
+                <p class="indicadorPagina">Detalles de <span id="nombreDetalle">NOMBRE DE REFUGIO</span></p>
 
                 <div class="togglerFilteringPosition">
                     <div id="toggleF">
@@ -125,40 +125,63 @@
                 </div>
 
                 <div id="contenedorFiltros" class="closedFiltering">
-
-                    <button id="botonBorrarPersona" class="butLog butLogSelect" onclick="DialogBorrarPersona.showModal()">Borrar Persona</button>
-
+                    
+                    <button id="botonBorrarRefugio" class="butLog butLogSelect"
+                        onclick="DialogBorrarRefugio.showModal()">Borrar Refugio</button>
                 </div>
 
                 <div class=" mainviewAjustes">
-                        <div class="ajustesCol1">
-                            <div class="imgAjustesConte">
-                                <img src="images/avatar4.png" class="imagenAvatarAjustes bps">
-                            </div>
-                            <div class="uploadWrapper">
-                                <label for="fileLoader" class="labelCargar">Cargar nueva imagen</label>
-                                <div id="fileLoader" class="file-upload">
-                                    <input type="file" />
-                                    <i class="fa fa-arrow-up"></i>
-                                </div>
+                    <div class="ajustesCol1">
+                        <div class="imgAjustesConte">
+                            <img src="images/avatar7.png" class="imagenAvatarAjustes bps">
+                        </div>
+                        <div class="uploadWrapper">
+                            <label for="fileLoader" class="labelCargar">Cargar nueva imagen</label>
+                            <div id="fileLoader" class="file-upload">
+                                <input type="file" />
+                                <i class="fa fa-arrow-up"></i>
                             </div>
                         </div>
-                        <div class="ajustesCol2">
-                            <input id="inputDetallePersonaApellido" type="text" class="inputField spacer2"
-                                placeholder="Apellido" disabled>
-                            <input id="inputDetallePersonaNombre" type="text" class="inputField spacer2" placeholder="Nombre"
-                                disabled>
-                            <input id="inputDetallePersonaDate" type="text" class="inputField spacer2"
-                                placeholder="Fecha de Nacimiento (dd/mm/aaaa)" disabled>
-                            <input id="inputDetallePersonaDNI" type="text" class="inputField spacer2" placeholder="DNI"
-                                disabled>
-                            <input id="inputDetallePersonaPhone" type="text" class="inputField spacer2" placeholder="Telefono"
-                                disabled>
-                            <input id="inputDetallePersonaEmail" type="email" class="inputField spacer2" placeholder="Email"
-                                disabled>
-                            
-                        </div>
+                    </div>
 
+                    <div class="ajustesCol2">
+                        <input id="inputDetalleRefugioNombre" type="text" class="inputField spacer2"
+                            placeholder="Nombre" disabled>
+                        <input id="inputDetalleRefugioCiudad" type="text" class="inputField spacer2"
+                            placeholder="Ciudad" disabled>
+                        <input id="inputDetalleRefugioDireccion" type="text" class="inputField spacer2"
+                            placeholder="Dirección" disabled>
+                        <input id="inputDetalleRefugioPhone" type="text" class="inputField spacer2"
+                            placeholder="Telefono" disabled>
+                        <input id="inputDetalleRefugioEmail" type="text" class="inputField spacer2" placeholder="Email"
+                            disabled>
+                        <input id="inputDetalleRefugioEmpleados" type="text" class="inputField spacer2"
+                            placeholder="Cantidad de empleados" disabled>
+                        <input id="inputDetalleRefugioAnimales" type="text" class="inputField spacer2"
+                            placeholder="Cantidad de animales" disabled>
+                    </div>
+
+                    <dialog id="DialogBorrarRefugio" class="modal">
+                        <form method="dialog">
+                            <header>
+                                <div class="modalTitle">Borrar Refugio</div>
+                            </header>
+                            <section class="modalSeccionContainer">
+
+                                <p>Esta seguro que quiere borrar este refugio?</p>
+
+                            </section>
+                            <footer>
+                                <menu class="modalFooter">
+                                    <a class="butLog spacer1"
+                                        onclick="myFunction(), this.closest('dialog').close('cancel')">Borrar
+                                        Refugio</a>
+                                    <a class="butLog butLogINV spacer1" autofocus type="reset"
+                                        onclick="this.closest('dialog').close('cancel')">Cancelar</a>
+                                </menu>
+                            </footer>
+                        </form>
+                    </dialog>
 
                 </div>
 
@@ -169,27 +192,6 @@
 
 
     </div>
-
-    <dialog id="DialogBorrarPersona" class="modal">
-        <form method="dialog">
-            <header>
-                <div class="modalTitle">Borrar Persona</div>
-            </header>
-            <section class="modalSeccionContainer">
-
-                <p>Esta seguro que quiere borrar esta persona?</p>
-
-            </section>
-            <footer>
-                <menu class="modalFooter">
-                    <a class="butLog spacer1" onclick="myFunction(), this.closest('dialog').close('cancel')">Borrar
-                        Persona</a>
-                    <a class="butLog butLogINV spacer1" autofocus type="reset"
-                        onclick="this.closest('dialog').close('cancel')">Cancelar</a>
-                </menu>
-            </footer>
-        </form>
-    </dialog>
 
     <div id="toastOK">Cambio realizado con exito</div>
     <div id="toastNOT">Se produjo un error</div>
