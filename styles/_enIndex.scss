@@ -435,7 +435,7 @@ body {
 @media (max-width: 767px) {
   .realContent {
     border-radius: 0px;
-    height: calc(100vh - 100px);
+    height: auto;
     width: 100vw;
   }
 }

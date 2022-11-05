@@ -1,29 +1,32 @@
 function register() {
-    const [day, month, year] = document.getElementById("inputDate").value.split('/')
-    const date = new Date(+year, month - 1, +day);
+    console.log("corriendo")
     fetch('http://arpaweb.ddns.net:8080/nuevousuario', {
         method: 'POST',
         body: JSON.stringify({
-            "nombre": document.getElementById("inputNombre").value + " " + document.getElementById("inputApellido").value,
+            "nombre": document.getElementById("inputNombre").value,
+            "apellido": document.getElementById("inputApellido").value,
             "dni": document.getElementById("inputDNI").value,
             "telefono": document.getElementById("inputPhone").value,
-            "fechaNacimiento": date,
+            "fechaNacimiento": Date.parse(document.getElementById("inputDate").value),
             //"domicilio": document.getElementById("").value,
-            "contraseña": document.getElementById("inputPass").value,
+            "contraseÃ±a": document.getElementById("inputPass").value,
             //"usuario": document.getElementById("").value,
-            "mail": document.getElementById("inputEmail").value
+            "mail": document.getElementById("inputEmail").value,
         }),
         headers: {
             "Content-type": "application/json",
         }
     }).then(response => response.json())
             .then(text => {
-                if (text.status === 200)
-                    window.location.href = 'index.html'
-                else {
-                    myFunction2(text.mensaje);
+                if (text.status === 200) {
+                    myFunction(text.mensaje)
+                } else {
+                    myFunction2(text.mensaje)
                 }
-            });
+            })
+    const [day, month, year] = document.getElementById("inputDate").value.split('/')
+    const date = new Date(+year, month - 1, +day);
+    console.log(date)
 }
 
 function myFunction(message) {

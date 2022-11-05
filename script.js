@@ -19,8 +19,9 @@ function myFunction() {
     setTimeout(function () { x.className = x.className.replace("show", ""); }, 5500);
 }
 
-function myFunction2() {
+function myFunction2(message) {
     var x = document.getElementById("toastNOT");
+    x.innerHTML=message;
     x.className = "show";
     setTimeout(function () { x.className = x.className.replace("show", ""); }, 5500);
 }
@@ -64,8 +65,7 @@ function login() {
                                 window.location.href = 'logged.html';
                             });
                 } else {
-                    resp.json().then(resp => console.log(resp.mensaje));
-                    myFunction2();
+                    resp.json().then(data => myFunction2(data.mensaje));
                 }
             });
 
@@ -76,7 +76,7 @@ width = screen.availwidth;
 height = screen.availheight;
 
 if (width > 0 && height >0) {
-    window.location.href = "http://localhost/main.php?width=" + width + "&height=" + height;
+    window.location.href = "http://arpaweb.ddns.net/main.php?width=" + width + "&height=" + height;
 } else 
     exit();
 */
